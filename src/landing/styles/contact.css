@@ -1,0 +1,34 @@
+#contactSection .textbox {
+    margin-bottom: 1rem;
+}
+#contactSection #logoBanner {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#contactSection form .button {
+    width: 100%;
+}
+
+/* small desktop view */
+@media screen and (min-width: 1024px) {
+	#contactSection {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    #contactBanner {
+        width: 50%;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    #contactSection form {
+        width: 50%;
+    }
+}
+
+/* large desktop view */
+@media screen and (min-width: 1200px) {
+	#contactBanner {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+}

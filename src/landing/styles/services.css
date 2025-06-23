@@ -1,0 +1,92 @@
+#servicesSection {
+    margin-top: 3rem;
+}
+#servicesSection .service-desc {
+    margin-bottom: 1.5rem;
+}
+#servicesSection .service-each {
+    margin-bottom: 5rem;
+}
+#servicesSection .service-each .title-md {
+    margin-bottom: 1rem;
+}
+#servicesSection .service-each .button:not(:last-child) {
+    margin-right: 1rem;
+}
+#servicesSection .service-img {
+    margin-top: 1.5rem;
+    height: 300px;
+    position: relative;
+    left: -1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#servicesSection .service-img img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+}
+#servicesSection .service-img-reverse {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: auto;
+    right: -1rem;
+}
+#servicesSection .service-img-reverse img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* small desktop view */
+@media screen and (min-width: 1024px) {
+    #servicesSection .service-each {
+        display: flex;
+        align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    #servicesSection .service-each .service-details {
+        margin-bottom: 0;
+    }
+    #servicesSection .service-each .service-details, #servicesSection .service-each .service-img {
+        width: 50%;
+    }
+    #servicesSection .service-each .service-details {
+        margin-right: 1.5rem;
+    }
+    #servicesSection .service-each .service-img {
+        margin-left: 1.5rem;
+        margin-top: 0;
+    }
+    #servicesSection .service-img {
+        left: auto;
+        height: 350px;
+    }
+    #servicesSection .service-img img {
+        border-radius: 20px;
+    }
+    #servicesSection .service-img-reverse {
+        right: 0;
+    }
+    #servicesSection .service-each-reverse .service-details {
+        margin-right: 0;
+        margin-left: 1.5rem;
+    }
+    #servicesSection .service-each-reverse .service-img {
+        margin-left: 0;
+        margin-right: 1.5rem;
+    }
+    
+}
+
+/* large desktop view */
+@media screen and (min-width: 1200px) {
+	
+}

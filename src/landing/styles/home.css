@@ -1,0 +1,35 @@
+#homeSection {
+	height: 80vh;
+	position: relative;
+	color: #fff;
+}
+#homeSection h1 {
+	font-weight: bold;
+	font-size: 64px;
+	margin-bottom: 1rem;
+	line-height: 1.25;
+}
+#homeSection p {
+	margin-bottom: 2rem;
+}
+#homeSection .button:not(:last-child) {
+	margin-right: 1rem;
+}
+
+/* small desktop view */
+@media screen and (min-width: 1024px) {
+	#homeHero {
+		width: 100%;
+		text-align: center;
+	}
+	#heroButtons {
+		justify-content: center;
+	}
+}
+
+/* large desktop view */
+@media screen and (min-width: 1200px) {
+	#homeHero {
+		width: 100%;
+	}
+}

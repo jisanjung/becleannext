@@ -1,0 +1,21 @@
+#ourStorySection {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#ourStorySection p {
+    color: #333;
+    line-height: 1.45;
+}
+#ourStorySection .title-sm {
+    margin-bottom: 2rem;
+}
+
+/* small desktop view */
+@media screen and (min-width: 1024px) {
+    #ourStorySection {
+        margin-bottom: 8rem;
+    }
+    #ourStorySection p {
+
+    }
+}
