@@ -2,7 +2,7 @@
 export default function Book() {
     return (
         <main>
-            booking dih
+            booking
         </main>
     );
 }
