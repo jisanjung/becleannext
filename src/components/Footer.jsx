@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <footer className='flex justify-center lg:block px-4 py-6 md:px-10' style={{
         background: FOOTER_BACKGROUND_COLOR,
+        color: '#000',
     }}>
         <div className='lg:flex lg:items-center lg:justify-between wrapper'>
             <div>

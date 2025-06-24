@@ -1,6 +1,3 @@
-// import exteriorDetail from './images/exterior_detail.jpeg';
-// import interiorDetail from './images/interior_detail.jpg';
-// import detailPackage from './images/detail_package.jpg';
 import './styles/services.css';
 
 const Services = ({ className }) => {
