@@ -1,8 +1,19 @@
+'use client'
 
-export default function Book() {
+import '../globals.css';
+import { createStore, StoreProvider } from 'easy-peasy';
+import { globalState } from '@/model';
+import Book from './Book';
+
+export default function BookWrapper() {
+
+    const store = createStore(globalState);
+
     return (
-        <main>
-            booking
-        </main>
-    );
+        <>
+            <StoreProvider store={store}>
+                <Book/>
+            </StoreProvider>
+        </>
+        );
 }
