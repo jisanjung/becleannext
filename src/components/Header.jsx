@@ -7,10 +7,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import DesktopNav from './DesktopNav';
 import ButtonPrimary from './ButtonPrimary';
 import Image from 'next/image';
+import content from '../content.json';
 
 const Header = () => {
 
   const [menuToggled, setMenuToggled] = useState(false);
+
+  const { bubblesLogoFilePath, logo } = content.common;
+  const { bookCTA } = content.nav;
 
   return (
     <header style={{
@@ -27,13 +31,13 @@ const Header = () => {
                 width: '50px'
               }}>
                 <Image
-                  src='/beclean_logo.png'
+                  src={bubblesLogoFilePath}
                   alt='Beclean Logo'
                   width={100}
                   height={100}
                 />
               </div>
-              <p className='font-bold text-lg'>beclean</p>
+              <p className='font-bold text-lg'>{logo}</p>
             </a>
             <button className='lg:hidden' onClick={() => setMenuToggled(!menuToggled)}>
               <GiHamburgerMenu className='text-3xl'/>
@@ -44,7 +48,7 @@ const Header = () => {
         </div>
         <div className='hidden lg:flex items-center'>
           <a href='/book'>
-            <ButtonPrimary>Book an Appointment</ButtonPrimary>
+            <ButtonPrimary>{bookCTA}</ButtonPrimary>
           </a>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import content from '../content.json';
 
 const MobileNav = ({ menuToggled, className }) => {
 
@@ -9,6 +10,8 @@ const MobileNav = ({ menuToggled, className }) => {
     setMenuContentHeight(menuContentRef?.current?.scrollHeight);
   }, []);
 
+  const { home, services, contact, ourStory } = content.nav;
+
   return (
     <nav className={`transition-all overflow-hidden ${className}`}
       ref={menuContentRef}
@@ -17,10 +20,10 @@ const MobileNav = ({ menuToggled, className }) => {
       }}
     >
         <ul className='my-4'>
-            <li className='pb-4'><a href="/">Home</a></li>
-            <li className='pb-4'><a href="/#servicesSection">Services</a></li>
-            <li className='pb-4'><a href="/#contactSection">Contact</a></li>
-            <li><a href="/#ourStorySection">Our Story</a></li>
+            <li className='pb-4'><a href="/">{home}</a></li>
+            <li className='pb-4'><a href="/#servicesSection">{services}</a></li>
+            <li className='pb-4'><a href="/#contactSection">{contact}</a></li>
+            <li><a href="/#ourStorySection">{ourStory}</a></li>
         </ul>
     </nav>
   )

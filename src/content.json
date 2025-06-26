@@ -21,7 +21,8 @@
             "headline": "The Finest Detail",
             "subtext": "Unveil the Beauty of Your Vehicle With Our Mobile Detailing Services.",
             "learnMoreCTA": "Learn More",
-            "bookCTA": "Book Now"
+            "bookCTA": "Book Now",
+            "imgFilePath": "/landing/home_section.jpeg"
         },
         "servicesSection": {
             "bookCTA": "Book Now",
@@ -45,7 +46,9 @@
                 "placeholders": {
                     "name": "Name",
                     "contactPreference": "Preferred method of contact",
-                    "messageBox": "How can we help?"
+                    "messageBox": "How can we help?",
+                    "email": "Enter Email",
+                    "phone": "Enter Phone"
                 },
                 "submitCTA": "Submit"
             }
@@ -59,7 +62,7 @@
     "services": {},
     "book": {},
     "footer": {
-        "copyrightText": "Copyright &copy;",
+        "copyrightText": "Copyright",
         "nav": {
             "services": "Services",
             "contact": "Contact Us"
