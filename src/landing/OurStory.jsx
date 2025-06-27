@@ -10,7 +10,7 @@ const OurStory = ({ className }) => {
             </p>
             <br/>
             <p className="text text-center">
-            beclean is a detailing studio dedicated exclusively to enhancing the image of your car. While other shops offer general services, our singular focus sets us apart. We specialize in making your vehicle shine brighter, last longer, and turn heads every time it hits the road.
+            Years of relentless focus, testing, and refinement led to the creation of the world’s first detailing studio dedicated solely to ceramic coatings. The result is the ultimate ceramic coating experience. By specializing exclusively in coatings, we deliver unmatched gloss, protection, and precision your vehicle won’t find anywhere else. We don’t just make your car shine brighter, last longer, and turn heads, it’s all we do.
             </p>
             <br/>
             <p className="text text-center">
