@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.3.4",
     "easy-peasy": "^6.1.0",
     "next": "15.3.4",
     "react": "^19.0.0",
