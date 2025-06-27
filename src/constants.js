@@ -98,3 +98,5 @@ export const BOOKING_URL_MAPPING = {
 export const incentives = {
   checkout_discount: 250, // TODO: remove this, or set to 0 later when needed
 };
+
+export const GTM_ID="GTM-W94WTFVD"
