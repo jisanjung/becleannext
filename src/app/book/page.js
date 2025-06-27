@@ -1,19 +1,15 @@
-'use client'
+/**
+ * page.js must be a server side component in order to have custom metadata
+ * hence why we are importing BookWrapper
+*/
 
-import '../globals.css';
-import { createStore, StoreProvider } from 'easy-peasy';
-import { globalState } from '@/model';
-import Book from './Book';
+export const metadata = {
+  title: "Book a Ceramic Coating Appointment | beclean",
+  description: "Book your ceramic coating now. Get expert-level shine, 8-year protection, with free pickup & delivery. See the difference of ceramic coatings only at beclean.",
+};
 
-export default function BookWrapper() {
+import BookWrapper from "./BookWrapper";
 
-    const store = createStore(globalState);
-
-    return (
-        <>
-            <StoreProvider store={store}>
-                <Book/>
-            </StoreProvider>
-        </>
-        );
+export default function BookServer() {
+    return <BookWrapper/>;
 }
