@@ -4,7 +4,7 @@ const InfoSection = ({ className }) => {
   return (
     <section className={`py-6 md:py-6 lg:py-10 ${className}`}>
         <div className='mb-6 pb-6 border-b-1 border-gray-300'>
-            <h1 className='font-bold text-4xl mb-6 lg:mb-10'>Ceramic Coating Information</h1>
+            <h2 className='font-bold text-4xl mb-6 lg:mb-10'>Ceramic Coating Information</h2>
             <div className='lg:flex'>
                 <h3 className='font-bold text-xl mb-3 lg:w-1/4 lg:flex lg:items-center'>
                     <span>Ceramic Coating <br/> Overview</span>

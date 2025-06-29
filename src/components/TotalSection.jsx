@@ -37,7 +37,7 @@ const TotalSection = ({ className }) => {
     <section className={`py-4 md:py-6 lg:py-8 bg-gray-100 ${className}`}>
         <div className='wrapper lg:flex'>
             <div className='lg:w-3/5'>
-                <h1 className='font-bold text-4xl mb-4'>Your ceramic coating. <span className='text-gray-500'>The Way You Want It.</span></h1>
+                <h2 className='font-bold text-4xl mb-4'>Your ceramic coating. <span className='text-gray-500'>The Way You Want It.</span></h2>
                 <div className='flex justify-center'>
                     <div className='w-80 sm:w-96 h-48 my-8'>
                         <img src={vehicleImage} alt='Display Car' className='w-full h-full object-cover'/>
