@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const Hero = ({ className }) => {
   return (
-    <div className={`${className}`}>
+    <div className={`service-hero ${className}`}>
         <div className="wrapper px-4 md:px-10 py-4">
-            <h1 className="text-center font-bold mb-1">Ceramic Coating Services</h1>
-            <h2 className="text-center font-bold text-3xl">Brilliance that Lasts.</h2>
+            <h1 className="text-center font-bold mb-1 text-white">Ceramic Coating Services</h1>
+            <h2 className="text-center font-bold text-2xl text-white">Brilliance that Lasts.</h2>
             < Image
                 src='/service_hero.png'
                 alt='Porshe 911 GT3RS'
