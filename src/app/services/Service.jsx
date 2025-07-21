@@ -3,6 +3,7 @@ import '../globals.css';
 import './services.css';
 import Hero from './Hero';
 import AboutSection from './AboutSection';
+import IncludedServices from './IncludedServices';
 
 const Service = () => {
   return (
@@ -15,6 +16,7 @@ const Service = () => {
         </AlertBanner>
         <Hero/>
         <AboutSection/>
+        <IncludedServices/>
     </main>
   )
 }

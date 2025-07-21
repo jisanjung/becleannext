@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <section className='wrapper px-4 md:px-10 py-8'>
+    <section className='wrapper px-4 md:px-10 py-4 mt-4'>
         <h3 className='mb-4'><span className='text-2xl font-bold text-gray-500'>Choose beclean.</span>
             <br/>
             <span className='text-2xl font-bold'>
