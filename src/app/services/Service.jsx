@@ -4,6 +4,8 @@ import './services.css';
 import Hero from './Hero';
 import AboutSection from './AboutSection';
 import IncludedServices from './IncludedServices';
+import WindowCoatingInfo from './WindowCoatingInfo';
+import Logistics from './Logistics';
 
 const Service = () => {
   return (
@@ -17,6 +19,8 @@ const Service = () => {
         <Hero/>
         <AboutSection/>
         <IncludedServices/>
+        <WindowCoatingInfo/>
+        <Logistics/>
     </main>
   )
 }
