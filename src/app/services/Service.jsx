@@ -6,6 +6,7 @@ import AboutSection from './AboutSection';
 import IncludedServices from './IncludedServices';
 import WindowCoatingInfo from './WindowCoatingInfo';
 import Logistics from './Logistics';
+import Testimonials from './Testimonials';
 
 const Service = () => {
   return (
@@ -21,6 +22,7 @@ const Service = () => {
         <IncludedServices/>
         <WindowCoatingInfo/>
         <Logistics/>
+        <Testimonials/>
     </main>
   )
 }
