@@ -13,7 +13,7 @@ function NextArrow(props) {
     const { className, style, onClick } = props;
     return <MdOutlineKeyboardArrowRight
         className={className}
-        style={{ ...style, display: "block", color: 'black', right: '0' }}
+        style={{ ...style, display: "block", color: 'black', right: '0', zIndex: '1' }}
         onClick={onClick}
     />;
   }
@@ -22,7 +22,7 @@ function NextArrow(props) {
     const { className, style, onClick } = props;
     return <MdOutlineKeyboardArrowLeft
         className={className}
-        style={{ ...style, display: "block", color: 'black', left: '0' }}
+        style={{ ...style, display: "block", color: 'black', left: '0', zIndex: '1' }}
         onClick={onClick}
     />;
   }
@@ -34,7 +34,7 @@ const slickSettings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     nextArrow: <NextArrow/>,
     prevArrow: <PrevArrow/>
 };
