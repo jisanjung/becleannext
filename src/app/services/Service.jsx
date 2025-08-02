@@ -1,3 +1,5 @@
+'use client';
+
 import AlertBanner from '@/components/AlertBanner';
 import '../globals.css';
 import './services.css';
@@ -7,6 +9,8 @@ import IncludedServices from './IncludedServices';
 import WindowCoatingInfo from './WindowCoatingInfo';
 import Logistics from './Logistics';
 import Testimonials from './Testimonials';
+import FaqSection from '@/components/FaqSection';
+import BookNow from './BookNow';
 
 const Service = () => {
   return (
@@ -23,6 +27,8 @@ const Service = () => {
         <WindowCoatingInfo/>
         <Logistics/>
         <Testimonials/>
+        <FaqSection className='px-4 md:px-10 wrapper'/>
+        <BookNow/>
     </main>
   )
 }
