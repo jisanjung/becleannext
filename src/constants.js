@@ -99,4 +99,17 @@ export const incentives = {
   checkout_discount: 250, // TODO: remove this, or set to 0 later when needed
 };
 
-export const GTM_ID="GTM-W94WTFVD"
+export const GTM_ID="GTM-W94WTFVD";
+
+export const customerReviews = [
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+    name: 'Kraven Moorhed',
+    date: 'Jan 23rd, 1989'
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+    name: 'Eyema Feghit',
+    date: 'Aug 5th, 1997'
+  },
+];

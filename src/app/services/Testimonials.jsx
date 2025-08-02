@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { GoStarFill } from "react-icons/go";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { customerReviews } from '@/constants';
 
 
 function NextArrow(props) {
@@ -27,8 +28,22 @@ function NextArrow(props) {
     />;
   }
 
+  function ReviewCard(props) {
+    const { text, name, date } = props;
+    
+    return (
+        <div className='m-8 p-4 bg-gray-100 rounded-3xl'>
+            <p>"{text}"</p>
+            <div className='mt-4'>
+                <p className='font-bold'>{name}</p>
+                <p className='font-bold'>{date}</p>
+            </div>
+        </div>
+    );
+  }
+
 const slickSettings = {
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
     speed: 500,
@@ -54,24 +69,13 @@ const Testimonials = () => {
         </div>
         <div>
             <Slider {...slickSettings}>
-                <div className='p-8'>
-                    <h3>1</h3>
-                </div>
-                <div className='p-8'>
-                    <h3>2</h3>
-                </div>
-                <div className='p-8'>
-                    <h3>3</h3>
-                </div>
-                <div className='p-8'>
-                    <h3>4</h3>
-                </div>
-                <div className='p-8'>
-                    <h3>5</h3>
-                </div>
-                <div className='p-8'>
-                    <h3>6</h3>
-                </div>
+                {customerReviews.map((review) => (
+                    <ReviewCard
+                        text={review.text}
+                        name={review.name}
+                        date={review.date}
+                    />
+                ))}
             </Slider>
         </div>
     </section>
