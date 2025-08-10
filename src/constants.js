@@ -14,10 +14,6 @@ export const FAQ_LIST = [
         answer: "At beclean, we strongly believe that every vehicle must have a ceramic coating. That includes every vehicle from your average daily driver to a exotic cars displayed at car shows. Our reason for such strong beliefs? It’s because we desire for everyone to be able to both protect their vehicles while falling in love with how they look. Not only will a ceramic coating provide protection to your car's paint, you will stand out from the rest of the cars on the road."
       },
       {
-        question: "How long does your ceramic coating last?",
-        answer: "Many factors play into the lifetime of a ceramic coating but we conducted extensive research to find the perfect coating that met our specifications, one of those being longevity. Our coating is rated to last up to 5 years*."
-      },
-      {
         question: "I booked an appointment, what happens next?",
         answer: "Once you book an appointment a confirmation email will be sent. Please mark the time on your calendar. Leading up to the detail, our team will contact you to confirm your appointment."
       },
@@ -31,11 +27,11 @@ export const FAQ_LIST = [
       },
       {
         question: "How long does it take to ceramic coat a car from start to finish?",
-        answer: "Our process of decontaminating the paint, polishing, ceramic prep, coating process, and coating curing takes more than 8 hours. The reason why a ceramic coating takes so long is because it’s important we meticulously perform each step to ensure the coating properly adheres to your car’s paint. Any shortcut can lead to the coating failing prematurely and poor ceramic performance."
+        answer: "Our process of decontaminating the paint, polishing, ceramic prep, coating process, and coating curing takes approximately 6-7 hours. The reason why a ceramic coating takes so long is because it’s important we meticulously perform each step to ensure the coating properly adheres to your car’s paint. Any shortcut can lead to the coating failing prematurely and poor ceramic performance. However, we will perform to the best of our abilities to get your car back to you before your work day ends."
       },
       {
         question: "What happens once the car is finished coating?",
-        answer: "Once the coating is finished curing, our team members will reach out to you to arrange for pick-up of the vehicle. If you elected to have your car dropped off at a location, we will reach out to confirm the address and time of the drop-off.\n\nAfter a coating, you will receive a coating gift box which includes: a plush microfiber towel, quick detailer for quick cleanups, and a ceramic coating maintenance guide."
+        answer: "Once the coating is finished curing, our team members will reach out to you to arrange for the drop-off of the vehicle. We will reach out to confirm the address and time of the drop-off. After a coating, you will receive a coating gift box which includes: a plush microfiber towel and  quick detailer."
       },
       {
         question: "Which parts of the car are ceramic coated?",
@@ -59,7 +55,7 @@ export const FAQ_LIST = [
       },
       {
         question: "What happens during a beclean ceramic coating?",
-        answer: "Once we receive your car, we start with a decontamination wash which includes a mechanical and chemical decontamination. After the car is dried, we begin the paint enhancement portion where we polish the vehicle. This process not only brings a brilliant shine, it also removes scratches from your paint. Next, we apply a dedicated ceramic coating prep and apply the first layer of ceramic coating. After the first layer, we apply a second layer of ceramic coating which not only enhances the appearances but adds another layer of protection. Once the 2 layers of coating are applied, the car is required to cure for 8 hours before being driven. This process is critical for proper coating adhesion since the car can not be exposed to the elements within those 8 hours, otherwise the coating will fail prematurely."
+        answer: "Once we receive your car, we start with a decontamination wash which includes a mechanical and chemical decontamination. After the car is dried, we begin the paint enhancement portion where we polish the vehicle. This process not only brings a brilliant shine, it also removes scratches from your paint. Next, we apply a dedicated ceramic coating prep and apply the ceramic coating. After applying the ceramic coating, we wait 1 hour before returning your vehicle back to you."
       },
       {
         question: "Can I reschedule my appointment?",
@@ -68,14 +64,6 @@ export const FAQ_LIST = [
       {
         question: "Why should I use beclean for a ceramic coating?",
         answer: "At beclean we specialize in ceramic coatings. While other detailers and shops might do multiple services such as paint protection film (PPF), tinting, dent removal, general detailing, and more. We focus only on ceramic coatings making us highly knowledgeable on ceramic coatings and how to properly perform the service. This specialization helps us to devise the best possible coating process that increases proper coating longevity, performance, and quality control.\n\nNot only do we specialize in coatings, we have an ideal climate controlled environment that is required for proper coating curing, critical to making the coating last as long as possible.\n\nIf that is not enough, we only service 1 car a day. This means that you have our full, undivided attention that you and your car need during the coating process. Why settle for anything less than the attention that you need."
-      },
-      {
-        question: "What ceramic coating do you use?",
-        answer: "We conducted extensive research on various coatings to make sure that they fit within our criteria of the best coating. We came to the conclusion that the Gyeon Syncro Kit is the best ceramic coating that we can currently get. The reason why we arrived at this conclusion is because by using this 2-layer system, it combines the perfect balance of protection, slickness, hydrophobics, longevity, self-cleaning, and most importantly paint appearance.\n\nIf you desire for us to use a different ceramic coating, we will certainly do our best to work with whatever coating you decide to use."
-      },
-      {
-        question: "Why do you use a 2-layer ceramic coating system?",
-        answer: "After conducting extensive research, we quickly realized that a 2-layer system is required to achieve the results that we want for your car. Traditionally, ceramic coatings are applied in a 1-layer fashion. However, a 1-layer application does not have all the qualities that we are looking for. Those qualities being protection, slickness, hydrophobics, longevity, self-cleaning, and most importantly paint appearance. By using a 2-layer application, we are able to achieve the best results possible."
       },
 ];
 
