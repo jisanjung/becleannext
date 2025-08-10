@@ -8,6 +8,9 @@ import { GoogleTagManager } from '@next/third-parties/google'
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
+  verification: {
+            google: "e80GxNcgWsCGtAEmx7vM-_eZBvtKGuOy_fTNjEQ--HY",
+  },
   title: "Ceramic Coating Studio and Ceramic Coating Installers | beclean",
   description: "The world's first studio devoted solely to ceramic coatings. Every step is refined for precision, elegance, and protection that makes a lasting impression.",
 };
