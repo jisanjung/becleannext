@@ -11,24 +11,25 @@ const AboutSection = () => {
         </h3>
         <div>
             <p className='mb-4'>
-            Imagine your car ceramic coated. So intensely glossy it nearly blinds you in the sunlight. Neighbors slow down as they pass,
-             subtly admiring the depth of color and flawless finish. At the next family gathering, heads turn as you pull in. You step out,
-              and the look on their faces says it all: they look amazing.
+                Imagine your car ceramic coated. So shiny glossy it turns heads in the sunlight, drawing quiet admiration from neighbors and family alike. 
+                Beyond the stunning finish comes peace of mind: less washing, fewer scratches, and 8 - year lasting protection that frees you from constant upkeep.
+                 Without it, the shine fades, imperfections multiply, and your car slowly blends into the crowd. What costs more: preserving your presence now, 
+                or trying to reclaim it later? Choose to protect your presence. Choose beclean.
             </p>
+        </div>
+        <h3 className='mb-4'><span className='text-2xl font-bold text-gray-500'>Who Should Get This?</span>
+            <br/>
+            <span className='text-2xl font-bold'>
+                The Option for Those Who Want it All.
+            </span>
+        </h3>
+        <div>
             <p className='mb-4'>
-                Now imagine the ease. Less time spent washing, fewer worries about scratches or swirl marks, and no more constant upkeep hanging over your head.
-                 With ceramic coating, the fear of imperfection fades. Scratches dull. The paint stays protected. And you drive with confidence.
-            </p>
-            <p className='mb-4'>
-                Imagine the opposite.
-            </p>
-            <p className='mb-4'>
-                Without ceramic coating, dirt and scratches pile up. You spend countless hours trying to maintain a shine that fades faster each year. 
-                The compliments disappear. The car that once stood out becomes just another one on the road. 
-                What costs more in the long run: protecting your car now, or trying to restore what's already lost?
-            </p>
-            <p className='mb-4'>
-                Choose to protect your presence. Choose beclean.
+                If you're seeking a ceramic coating that delivers across the board, this is perfect for you. Rated for 8-years of durability, this is designed for
+                 those who value balanced excellence: a mirror-like shine, exceptional water beading and self-cleaning, and robust protection against UV rays, 
+                 chemicals, and the grind of everyday driving. It's for the discerning owner who wants refined performance in every category. 
+                 Whether it's your first time exploring ceramic coatings or you simply want something proven, elegant, and enduring, 
+                 this is the all-around performer. The intelligent choice for those who expect more.
             </p>
         </div>
     </section>

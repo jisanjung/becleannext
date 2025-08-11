@@ -5,7 +5,7 @@ import React from 'react'
 
 const BookNow = () => {
   return (
-    <section className='wrapper px-4 md:px-10'>
+    <section className='wrapper px-4 md:px-10 mb-14'>
         <Image
             src='/service_hero.png'
             alt='Sports Car'

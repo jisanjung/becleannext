@@ -4,7 +4,7 @@ import Card from './Card'
 const IncludedServices = () => {
   return (
     <section className='wrapper px-4 md:px-10 py-4'>
-        <h3 className='mb-4'><span className='text-2xl font-bold text-gray-500'>Our Ceramic Coating Services.</span>
+        <h3 className='mb-4'><span className='text-2xl font-bold text-gray-500'>Our 8 - Year Ceramic Coating Service.</span>
             <br/>
             <span className='text-2xl font-bold'>
                 What it includes.

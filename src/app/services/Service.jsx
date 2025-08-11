@@ -11,6 +11,7 @@ import Logistics from './Logistics';
 import Testimonials from './Testimonials';
 import FaqSection from '@/components/FaqSection';
 import BookNow from './BookNow';
+import Deliverables from './Deliverables';
 
 const Service = () => {
   return (
@@ -29,6 +30,7 @@ const Service = () => {
         <Testimonials/>
         <FaqSection className='px-4 md:px-10 wrapper'/>
         <BookNow/>
+        <Deliverables/>
     </main>
   )
 }
