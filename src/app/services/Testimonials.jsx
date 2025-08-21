@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +14,7 @@ function NextArrow(props) {
     const { className, style, onClick } = props;
     return <MdOutlineKeyboardArrowRight
         className={className}
-        style={{ ...style, display: "block", color: 'black', right: '0', zIndex: '1' }}
+        style={{ ...style, display: "block", color: 'black', right: '0', zIndex: '1', width: '36px', height: '36px' }}
         onClick={onClick}
     />;
   }
@@ -23,7 +23,7 @@ function NextArrow(props) {
     const { className, style, onClick } = props;
     return <MdOutlineKeyboardArrowLeft
         className={className}
-        style={{ ...style, display: "block", color: 'black', left: '0', zIndex: '1' }}
+        style={{ ...style, display: "block", color: 'black', left: '0', zIndex: '1', width: '36px', height: '36px' }}
         onClick={onClick}
     />;
   }
@@ -42,31 +42,45 @@ function NextArrow(props) {
     );
   }
 
-const slickSettings = {
-    dots: false,
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    nextArrow: <NextArrow/>,
-    prevArrow: <PrevArrow/>
-};
-
 const Testimonials = () => {
+
+    const breakpoint = 1024;
+    const [isDesktop, setIsDesktop] = useState(null);
+
+    useEffect(() => {
+        // run only on client
+        const media = window.matchMedia(`(min-width: ${breakpoint}px)`);
+        const update = () => setIsDesktop(media.matches);
+
+        update(); // set initial value
+        media.addEventListener("change", update);
+        return () => media.removeEventListener("change", update);
+    }, [breakpoint]);
+
+    const slickSettings = {
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        autoplaySpeed: 5000,
+        slidesToShow: isDesktop ? 3 : 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        nextArrow: <NextArrow/>,
+        prevArrow: <PrevArrow/>
+    };
+
   return (
     <section className='wrapper px-4 md:px-10 py-4'>
-        <h3 className='mb-4 text-2xl font-bold text-center'>
+        <h3 className='mb-4 text-2xl font-bold text-center lg:text-4xl'>
             What Our Clients Say
         </h3>
-        <div className='flex justify-center'>
-            <GoStarFill className='text-2xl text-yellow-400 mr-1'/>
-            <GoStarFill className='text-2xl text-yellow-400 mr-1'/>
-            <GoStarFill className='text-2xl text-yellow-400 mr-1'/>
-            <GoStarFill className='text-2xl text-yellow-400 mr-1'/>
-            <GoStarFill className='text-2xl text-yellow-400'/>
+        <div className='flex justify-center lg:my-6'>
+            <GoStarFill className='text-2xl text-yellow-400 mr-1 lg:text-4xl'/>
+            <GoStarFill className='text-2xl text-yellow-400 mr-1 lg:text-4xl'/>
+            <GoStarFill className='text-2xl text-yellow-400 mr-1 lg:text-4xl'/>
+            <GoStarFill className='text-2xl text-yellow-400 mr-1 lg:text-4xl'/>
+            <GoStarFill className='text-2xl text-yellow-400 lg:text-4xl'/>
         </div>
         <div>
             <Slider {...slickSettings}>

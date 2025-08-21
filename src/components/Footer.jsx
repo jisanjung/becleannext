@@ -1,12 +1,27 @@
+'use client';
+
 import { FOOTER_BACKGROUND_COLOR } from '../constants'
 import LinkButton from './LinkButton'
 import { FaLinkedinIn } from "react-icons/fa";
 import { TfiFacebook } from "react-icons/tfi";
 import { FaInstagram } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
+
+    const PATHNAMES_TO_SHOW_FINEPRINT = ['/services'];
+    const [showFinePrint, setShowFinePrint] = useState(false);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        if (PATHNAMES_TO_SHOW_FINEPRINT.includes(pathname)) {
+            setShowFinePrint(true);
+        }
+    }, []);
+
   return (
-    <footer className='flex justify-center lg:block px-4 py-6 md:px-10' style={{
+    <footer className='flex flex-col lg:flex-row justify-center lg:block px-4 py-6 md:px-10' style={{
         background: FOOTER_BACKGROUND_COLOR,
         color: '#000',
     }}>
@@ -35,8 +50,13 @@ const Footer = () => {
                     <LinkButton href='tel:+12674096913'>(267) 409-6913</LinkButton>
                 </div>
             </div>
-            <p className='font-bold lg:hidden'>Copyright &copy; <span>{new Date().getFullYear()}</span> beclean </p>
+            <p className='font-bold lg:hidden text-center'>Copyright &copy; <span>{new Date().getFullYear()}</span> beclean </p>
         </div>
+        {showFinePrint && (
+            <div className='wrapper pt-10'>
+                <small> * Durability ratings are based on an average life expectancy. Coatings can last longer or shorter depending on the life a car is subjected to. The harsher the life, the shorter a coating will last.</small>
+            </div>
+        )}
     </footer>
   )
 }

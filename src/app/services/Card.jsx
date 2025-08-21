@@ -3,7 +3,7 @@ import React from 'react'
 
 const Card = ({ title, description, imgSrc, className }) => {
   return (
-    <div className={`${className} bg-gray-100 p-4 rounded-2xl`}>
+    <div className={`${className} bg-gray-100 p-4 rounded-2xl lg:w-1/2 lg:m-4`}>
         <h4 className='mb-4 text-2xl font-bold'>{title}</h4>
         <p className='mb-4'>{description}</p>
         <div>

@@ -4,7 +4,7 @@ import React from 'react'
 const Deliverables = () => {
   return (
     <section className='wrapper px-4 md:px-10'>
-        <div className='flex flex-col items-center border-t-1 border-gray-400 p-8'>
+        <div className='flex flex-col items-center border-t-1 border-gray-400 p-8 lg:p-16'>
             <div className='flex flex-col items-center mb-6'>
                 <Image
                     src='/services/shield.png'

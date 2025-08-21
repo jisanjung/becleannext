@@ -28,7 +28,7 @@ const Service = () => {
         <WindowCoatingInfo/>
         <Logistics/>
         <Testimonials/>
-        <FaqSection className='px-4 md:px-10 wrapper'/>
+        <FaqSection className='px-4 md:px-10 wrapper lg:my-10'/>
         <BookNow/>
         <Deliverables/>
     </main>
