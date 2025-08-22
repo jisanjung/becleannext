@@ -11,7 +11,7 @@ const Hero = ({ className }) => {
             <h1 className="title-md">Be Greater. beclean.</h1>
             <p className="text">Unveil the Beauty of Your Vehicle With Our Ceramic Coating Services.</p>
             <div id="heroButtons" className="flex">
-              <a href="#servicesSection" className="button">Learn More</a>
+              <a href="/services" className="button">Learn More</a>
               <a href="/book" className="button">Book Now</a>
             </div>
           </div>

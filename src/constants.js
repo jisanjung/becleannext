@@ -91,13 +91,173 @@ export const GTM_ID="GTM-W94WTFVD";
 
 export const customerReviews = [
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
-    name: 'Kraven Moorhed',
-    date: 'Jan 23rd, 1989'
+    text: 'This is my first time having Be Clean do a premium ceramic coating on my vehicle, and they did an amazing job. Super impressed! Not only was the quality great, it was done same day. Really convenient when you work all day and cannot get away from the office. Be clean came to my office on time and started work right away. They truly care about their clients. I highly recommend these professionals.',
+    name: 'Jimmy',
+    date: '2025'
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
-    name: 'Eyema Feghit',
-    date: 'Aug 5th, 1997'
+    text: 'Just had my new Black Ram 1500 done and it is absolutely amazing. Very professional and done in a timely manner around my schedule. Definitely will recommend this service.',
+    name: 'Tony',
+    date: '2025'
+  },
+  {
+    text: 'If I could give 10 stars I would. Very professional and timely. Had all the needed equipment and expertise to complete the job. Best detailer in town hands down… Penny goes to town let me tell you… very happy with the job! Not only did he detail my car but he ceramic coated it with top of the line products. The convenience of having the car picked up and dropped back off is exceptional. My car is shiny and slippery with a phenomenal finish that dirt and water just glide off. Will be hitting him up for more royal treatment bc his services go hard.',
+    name: 'Logan',
+    date: '2025'
+  },
+  {
+    text: 'Wow! Car looks great after it was Ceramic Coated! Caught some rain after I got it back, water beaded right up and ran off. The finish looks consistent everywhere which is part of the meticulous prep work done prior to adding the coating. My car is only a few months old and I don’t trust just anyone to drive it. Pennington I trusted. Excellent job! Thanks!',
+    name: 'Scott',
+    date: '2025'
+  },
+  {
+    text: 'Be Clean did a beautiful job on my car and the paint looks better than new. I would highly recommend them and their professional service. 😊',
+    name: 'Scott',
+    date: '2025'
+  },
+  {
+    text: "Pennington did an outstanding job with my husband's Toyota 4Runner. He took his time and was extremely thorough with the interior cleaning, every inch of his car looked spotless. The attention to detail was beyond what I expected - Pennington went into every nook and cranny!",
+    name: 'Shea',
+    date: '2025'
+  },
+  {
+    text: "Very professional and thorough job cleaning my husband’s car. They removed years of dirt and grime due to neglect.",
+    name: 'Margaret',
+    date: '2025'
+  },
+  {
+    text: "Top notch service! Responsive and masterful detailing. Will use again!",
+    name: 'John',
+    date: '2025'
+  },
+  {
+    text: "Great experience.. ‘17 Volvo XC90 family vehicle. All the dirt, salt and dust that comes with it. After a full interior detail, it looks better than when we bought it. Doesn’t have the chemical smell you get after usual dealership details. Personal touch detailing for sure. Very happy",
+    name: 'Maji',
+    date: '2025'
+  },
+  {
+    text: "I've used this company several times for my vehicle and for my family members, and I can confidently say they provide excellent customer service and have a friendly staff. They truly take pride in their work—my car looked like it had just rolled off the showroom floor. I have a Husky that sheds everywhere, but after their detailing, you couldn't even tell I owned a dog!",
+    name: 'Demetrius',
+    date: '2025'
+  },
+  {
+    text: "Highly recommend this service. Very thorough and the 2 guys took their time with the details. Looked like new again! Very pleased and worth the money!",
+    name: 'Joan',
+    date: '2025'
+  },
+  {
+    text: "Pennington did an amazing job with detailing my truck.",
+    name: 'Connor',
+    date: '2025'
+  },
+  {
+    text: "I’ve had BeClean detail several of my vehicles, they do an amazing job. They have a fair price, they are on time, and they are professional. Tough to find all 3 these days, I’ll definitely be a returning customer this spring!",
+    name: 'Jon',
+    date: '2025'
+  },
+  {
+    text: "Best detail I’ve seen- commitment and attention to detail is next level. Every single area on the exterior and interior was thoroughly cleaned. Vehicle looked cleaner than when it was bought off the showroom floor. Best detailing service around!",
+    name: 'Bretton',
+    date: '2025'
+  },
+  {
+    text: "Outstanding Service! I recently had an Inside and Outside Clean done on my Hyundai Tucson, and I couldn’t be more impressed with the results! The attention to detail was incredible—every inch of my car, inside and out, was spotless. The exterior shines like new, and the interior feels fresh and completely refreshed. The service was professional, efficient, and well worth it. The level of care put into the cleaning really shows, and I appreciate the effort to make my car look its best. If you’re looking for top-quality car detailing, I highly recommend this service. Amazing job!",
+    name: 'Patrick',
+    date: '2025'
+  },
+  {
+    text: "Full detail on my A4. The best interior and exterior detail i’ve ever had done to my car. 10/10 would recommend.",
+    name: 'Andrew',
+    date: '2025'
+  },
+  {
+    text: "This detailing service is exceptional. My car looks brand new. They did a great job, and they were very meticulous, paying attention to every nook and cranny.",
+    name: 'George',
+    date: '2025'
+  },
+  {
+    text: "Would absolutely book Pennington again. He was very thorough. Car looked like new when he was finished with it.",
+    name: 'Yara',
+    date: '2025'
+  },
+  {
+    text: "Pennington did a fantastic job on an older car that has seen better days. He made the interior look like new. The most impressive part was he did it today (1/22/25) and the temperature only reached 15 degrees. He did it in my driveway and worked his butt off making sure it looked perfect. I can't wait to get him back out when the weather is nice and have him clean up all of our cars for the summer. He was prompt, polite and professional. I highly recommend him.",
+    name: 'Erik',
+    date: '2025'
+  },
+  {
+    text: "Service was superb! Pennington was punctual, professional, and turned my car that has lived through two children into what feels brand new. I would recommend Pennington and his team to all my friends. Thank you, BeClean Mobile Detailing!!",
+    name: 'Megan',
+    date: '2025'
+  },
+  {
+    text: "From start to finish the process was seamless, professional and exceeded my expectations! 10/10 would recommend!",
+    name: 'Allie',
+    date: '2024'
+  },
+  {
+    text: "Prompt, professional, great communication and detailed. Really appreciate their efforts. It was a great Mother’s Day gift. I will definitely use them again!!",
+    name: 'Andrew',
+    date: '2024'
+  },
+  {
+    text: "They did an absolutely fantastic job! Took about 2 hours for a sedan. Very professional and got out some really bad stains that I had. My car smelled and looked amazing after they were done! Would 100% recommend them to anyone and everyone.",
+    name: 'Mackenzie',
+    date: '2024'
+  },
+  {
+    text: "Super convenient service! They come out to you and they really take their time. Super friendly and great service! Will definitely be using their services again!",
+    name: 'Mia',
+    date: '2024'
+  },
+  {
+    text: "*****",
+    name: 'Jason',
+    date: '2024'
+  },
+  {
+    text: "Pennington and his colleague did an awesome job! Arrived on time, we’re clean and paid attention to the details. Will definitely have them come again.",
+    name: 'Shaun',
+    date: '2023'
+  },
+  {
+    text: "Pennington was very professional and did a great job detailing my car. Highly recommend him for anyone looking to get their car detailed.",
+    name: 'Taylor',
+    date: '2023'
+  },
+  {
+    text: "The best around! Left my car looking brand new again, smelling fantastic, with not a trace of dust or dirt behind. Will absolutely use again! Thank you!",
+    name: 'User',
+    date: '2023'
+  },
+  {
+    text: "Full interior detail. Did a great job, would use again.",
+    name: 'Matt',
+    date: '2023'
+  },
+  {
+    text: "If you’re looking for amazing cleaning this is your go to! Very thorough cleaning and efficient as well. Will definitely be using the service for a full detail again",
+    name: 'Will',
+    date: '2022'
+  },
+  {
+    text: "Had my car detailed last week by Be Clean last week, they came to me and did a great job cleaning the interior and exterior of my car. In total it took about 2 hours to complete.",
+    name: 'Dan',
+    date: '2022'
+  },
+  {
+    text: "Pennington and Erik did a fantastic job. Our car looked brand new! The convenience of them coming to your house is an added bonus.",
+    name: 'Beverly',
+    date: '2022'
+  },
+  {
+    text: "They did an amazing job on my old muddy jeep that had lots of dog fur.",
+    name: 'Nancy',
+    date: '2022'
+  },
+  {
+    text: "I was very happy with their service. Good value and will recommend to everyone.",
+    name: 'Lillie',
+    date: '2022'
   },
 ];

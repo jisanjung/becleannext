@@ -4,8 +4,8 @@
 */
 
 export const metadata = {
-  title: "test services | beclean",
-  description: "services description",
+  title: "Ceramic Coating Services | beclean",
+  description: "Services brought to you by beclean.",
 };
 
 import Service from "./Service";
