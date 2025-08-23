@@ -4,8 +4,8 @@
 */
 
 export const metadata = {
-  title: "Ceramic Coating Services | beclean",
-  description: "Services brought to you by beclean.",
+  title: "8 - Year Ceramic Coating Services | beclean",
+  description: "8 - year ceramic coating services showcases all - around ceramic coating performance while having one of the highest durability ratings on the market.",
 };
 
 import Service from "./Service";
