@@ -20,7 +20,7 @@ const Service = () => {
             background='#3C3B3B'
             color='#fff'
         >
-            Now through August 15, FREE Ceramic Window Coating with All Coatings
+            Now through Jan 1st 2026, BONUS $100M Money Model Book with Ceramic Coatings
         </AlertBanner>
         <Hero/>
         <AboutSection/>
