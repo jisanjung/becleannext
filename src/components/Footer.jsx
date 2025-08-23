@@ -10,7 +10,7 @@ import { usePathname } from 'next/navigation';
 
 const Footer = () => {
 
-    const PATHNAMES_TO_SHOW_FINEPRINT = ['/services'];
+    const PATHNAMES_TO_SHOW_FINEPRINT = ['/8-year-ceramic-coating'];
     const [showFinePrint, setShowFinePrint] = useState(false);
     const pathname = usePathname();
 
@@ -29,7 +29,7 @@ const Footer = () => {
             <div>
                 <p className='font-bold hidden lg:block lg:mb-2'>Copyright &copy; <span>{new Date().getFullYear()}</span> beclean </p>
                 <div className='flex justify-center lg:justify-start mb-6 lg:mb-0'>
-                    <LinkButton href="/services" className='pr-8 lg:pr-4'>Services</LinkButton>
+                    <LinkButton href="/8-year-ceramic-coating" className='pr-8 lg:pr-4'>Services</LinkButton>
                     <LinkButton href="/#contactSection">Contact Us</LinkButton>
                 </div>
             </div>

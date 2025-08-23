@@ -18,7 +18,7 @@ const MobileNav = ({ menuToggled, className }) => {
     >
         <ul className='my-4'>
             <li className='pb-4'><a href="/">Home</a></li>
-            <li className='pb-4'><a href="/services">Services</a></li>
+            <li className='pb-4'><a href="/8-year-ceramic-coating">Services</a></li>
             <li className='pb-4'><a href="/#contactSection">Contact</a></li>
             <li><a href="/#ourStorySection">Our Story</a></li>
         </ul>
