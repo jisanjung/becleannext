@@ -14,7 +14,7 @@ const Deliverables = () => {
                     sizes="100vw"
                     style={{ width: '150px', objectFit: 'cover' }}
                 />
-                <p className='pt-2'>Multi-Layer Ceramic Coating</p>
+                <p className='pt-2'>8 - Year Ceramic Coating</p>
             </div>
             <div className='flex flex-col items-center mb-4'>
                 <Image
@@ -25,7 +25,7 @@ const Deliverables = () => {
                     sizes="100vw"
                     style={{ width: '150px', objectFit: 'cover' }}
                 />
-                <p className='pt-2'>Multi-Layer Ceramic Coating</p>
+                <p className='pt-2'>Free Pick Up, Same Day Delivery, and Aftercare Kit</p>
             </div>
             <div className='flex flex-col items-center mb-4'>
                 <Image
@@ -36,7 +36,7 @@ const Deliverables = () => {
                     sizes="100vw"
                     style={{ width: '150px', objectFit: 'cover' }}
                 />
-                <p className='pt-2'>Multi-Layer Ceramic Coating</p>
+                <p className='pt-2'>Ceramic Coatings Perfected</p>
             </div>
         </div>
     </section>
