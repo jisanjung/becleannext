@@ -20,7 +20,7 @@ const Service = () => {
             background='#3C3B3B'
             color='#fff'
         >
-            Now through Jan 1st 2026, BONUS Winter Window Coating For All Ceramic Coatings
+            Now through Jan 1st 2026, BONUS Winter Window Coating For All Ceramic Coatings!
         </AlertBanner>
         <Hero/>
         <AboutSection/>
