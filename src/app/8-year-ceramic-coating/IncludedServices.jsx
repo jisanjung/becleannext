@@ -26,8 +26,8 @@ const IncludedServices = () => {
         </div>
         <div className='lg:flex'>
             <Card
-                title='Ceramic Coatings Perfected.'
-                description="Ceramic coating isn't one of many services, it's the only one. Our exclusive focus allows us to perfect every step, from surface preparation to final application. By dedicating ourselves solely to ceramic coatings, we deliver unmatched precision, lasting protection, and a finish that consistently shines."
+                title='Our Guarantee.'
+                description="At beclean, we stand behind our work with absolute confidence. If you’re not in love with your vehicle at the time of drop-off, we’ll fix at no extra cost. Our guarantee ensures you leave with nothing less than a finish that excites you every time you see your car."
                 imgSrc='/services/bmw_fast.jpg'
                 className='mb-4'
             />
