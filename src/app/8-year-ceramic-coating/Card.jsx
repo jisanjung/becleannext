@@ -11,9 +11,9 @@ const Card = ({ title, description, imgSrc, className }) => {
                 src={imgSrc}
                 alt={title}
                 width={0}
-                height={200}
+                height={400}
                 sizes="100vw"
-                style={{ width: '100%', maxHeight: '200px', objectFit: 'cover' }}
+                style={{ width: '100%', height: '400px', objectFit: 'cover' }}
                 className='rounded-2xl'
             />
         </div>
