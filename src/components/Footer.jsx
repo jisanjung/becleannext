@@ -30,7 +30,8 @@ const Footer = () => {
                 <p className='font-bold hidden lg:block lg:mb-2'>Copyright &copy; <span>{new Date().getFullYear()}</span> beclean </p>
                 <div className='flex justify-center lg:justify-start mb-6 lg:mb-0'>
                     <LinkButton href="/8-year-ceramic-coating" className='pr-8 lg:pr-4'>Services</LinkButton>
-                    <LinkButton href="/#contactSection">Contact Us</LinkButton>
+                    <LinkButton href="/#contactSection" className='pr-8 lg:pr-4'>Contact Us</LinkButton>
+                    <LinkButton href="/cookie-policy" className='pr-8 lg:pr-4'>Cookie</LinkButton>
                 </div>
             </div>
             <div>
