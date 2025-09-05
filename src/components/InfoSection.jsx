@@ -22,7 +22,7 @@ const InfoSection = ({ className }) => {
             <ul className='lg:w-3/4'>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 
-                    2-layer Ceramic Coating (All Painted Surfaces, Trim, and Rims)
+                    8 - Year Ceramic Coating (All Painted Surfaces, Trim, and Rims)
                 </li>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 
@@ -34,7 +34,7 @@ const InfoSection = ({ className }) => {
                 </li>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 
-                    Free Vehicle Drop-Off
+                    Free Vehicle Drop-Off & Same-Day Delivery
                 </li>
             </ul>
         </div>
