@@ -12,7 +12,7 @@ export const metadata = {
             google: "e80GxNcgWsCGtAEmx7vM-_eZBvtKGuOy_fTNjEQ--HY",
   },
   title: "Ceramic Coating Shop and Ceramic Coating Installers | beclean",
-  description: "beclean is world's first shop devoted solely to ceramic coatings. Every step is refined for precision, elegance, and protection that makes an impression.",
+  description: "beclean is the only detailing shop devoted solely to ceramic coatings. Every step is refined for precision, elegance, and protection that makes an impression.",
 };
 
 export default function RootLayout({ children }) {
