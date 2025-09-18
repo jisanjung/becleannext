@@ -11,8 +11,8 @@ export const metadata = {
   verification: {
             google: "e80GxNcgWsCGtAEmx7vM-_eZBvtKGuOy_fTNjEQ--HY",
   },
-  title: "Ceramic Coating Studio and Ceramic Coating Installers | beclean",
-  description: "The world's first studio devoted solely to ceramic coatings. Every step is refined for precision, elegance, and protection that makes a lasting impression.",
+  title: "Ceramic Coating Shop and Ceramic Coating Installers | beclean",
+  description: "beclean is the only detailing shop devoted solely to ceramic coatings. Every step is refined for precision, elegance, and protection that makes an impression.",
 };
 
 export default function RootLayout({ children }) {

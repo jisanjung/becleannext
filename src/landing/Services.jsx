@@ -9,7 +9,7 @@ const Services = ({ className }) => {
                 <h2 className="title-md">Ceramic Coating</h2>
                 <p className="text service-desc">
                     Our ceramic coating services are designed to protect your vehicle while enhancing its appearance with a deep, 
-                    lasting gloss. We specialize in a meticulous, multi-stage process using a 2-layer ceramic coating system to 
+                    lasting gloss. We specialize in a meticulous, process using an 8-year ceramic coating system to 
                     ensure long-term durability, hydrophobic performance, and a mirror-like finish. Each coating is applied in 
                     a controlled studio environment and includes complimentary delivery and a signature aftercare kit, 
                     so your vehicle stays protected long after it leaves our hands.
@@ -43,9 +43,9 @@ const Services = ({ className }) => {
             </div>
             <div className="service-each">
             <div className="service-details">
-                <h2 className="title-md">Free Delivery</h2>
+                <h2 className="title-md">Free Pickup and Same Day Delivery</h2>
                 <p className="text service-desc">
-                    We offer free vehicle delivery because we believe a premium service should extend beyond the coating itself. 
+                    We offer free vehicle pickup and same day delivery because we believe a premium service should extend beyond the coating itself. 
                     From the moment your vehicle enters our studio, it's treated with the highest level of care. It is cleaned, 
                     decontaminated, corrected, and coated to perfection. Once the process is complete and the coating has cured in 
                     our controlled environment, we deliver your vehicle directly back to you. No waiting rooms, no hassle. 
