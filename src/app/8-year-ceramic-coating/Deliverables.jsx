@@ -25,7 +25,7 @@ const Deliverables = () => {
                     sizes="100vw"
                     style={{ width: '150px', objectFit: 'cover' }}
                 />
-                <p className='pt-2'>Free Pick Up, Same Day Delivery, and Aftercare Kit</p>
+                <p className='pt-2'>Same Day Delivery, and Aftercare Kit</p>
             </div>
             <div className='flex flex-col items-center mb-4'>
                 <Image
