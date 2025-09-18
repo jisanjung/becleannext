@@ -17,7 +17,7 @@ const Hero = ({ className }) => {
               />
             </div>
             <div className="flex justify-center">
-              <a href="/book" className="mb-4 button inline-block w-full lg:w-auto text-center">Book Now</a>
+              <a href="/book" className="mb-4 button inline-block w-full lg:w-auto text-center">Click To Call</a>
             </div>
             <p className="text-center">From $1,500</p>
         </div>
