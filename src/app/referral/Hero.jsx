@@ -1,3 +1,4 @@
+import { REFERRAL_NUMBER_OF_SPOTS_REMAINING } from "@/constants";
 import { FaRegCheckCircle } from "react-icons/fa";
 
 const Hero = () => {
@@ -39,7 +40,7 @@ const Hero = () => {
                 <p>5 Spots / Week</p>
             </li>
         </ul>
-        <small className="text-center block text-orange-500 mb-1">Only 3 spots remaining</small>
+        <small className="text-center block text-orange-500 mb-1">Only {REFERRAL_NUMBER_OF_SPOTS_REMAINING} spots remaining</small>
         <a href="/book" className="button block text-center">
             Reserve My Spot
         </a>

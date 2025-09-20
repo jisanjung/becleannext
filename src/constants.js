@@ -261,3 +261,5 @@ export const customerReviews = [
     date: '2022'
   },
 ];
+
+export const REFERRAL_NUMBER_OF_SPOTS_REMAINING = 3;
