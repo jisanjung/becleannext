@@ -18,7 +18,7 @@ const IncludedServices = () => {
                 className='mb-4'
             />
             <Card
-                title='Pick up and Same Day Delivery. Full Convenience.'
+                title='Free Pick up and Same Day Delivery. Full Convenience.'
                 description='Our complimentary vehicle pick-up and guaranteed same-day delivery are designed to make the ceramic coating experience as seamless as the finish itself. From the moment we collect your vehicle, every step is executed with precision. By the end of the work day, it returns to you fully coated  and ready to command attention. Gone are the days of long curing times. World-class results, delivered to you the very same day.'
                 imgSrc='/services/driveway.jpg'
                 className='mb-4'

@@ -24,7 +24,7 @@ const BookNow = () => {
             </h6>
         </div>
         <div className="flex justify-center">
-          <a href="/book" className="mb-4 button inline-block w-full lg:w-auto text-center">Book Now</a>
+          <a href='tel:+12674096913' className="mb-4 button inline-block w-full lg:w-auto text-center">Call Us</a>
         </div>
     </section>
   )
