@@ -1,7 +1,7 @@
 import { BECLEAN_PRIMARY_BLUE_COLOR } from '@/constants';
 import React from 'react'
 
-const PricingDisplay = ({ topText, price, isRecurring, bottomText }) => {
+const PricingDisplay = ({ topText, priceFormatted, isRecurring, bottomText }) => {
     return (
         <div className='mt-4'>
             <p className='font-bold'>
@@ -11,12 +11,7 @@ const PricingDisplay = ({ topText, price, isRecurring, bottomText }) => {
                         color: BECLEAN_PRIMARY_BLUE_COLOR
                     }}
                 >
-                    {Intl.NumberFormat('en-US', {
-                        style: 'currency',
-                        currency: 'USD',
-                        minimumFractionDigits: 0,
-                        maximumFractionDigits: 0,
-                    }).format(price)}
+                    {priceFormatted}
                     {isRecurring && <span className='text-black text-2xl'>/ year*</span>}
                 </span>
                 <span className='block text-right'>{bottomText}</span>
@@ -41,7 +36,7 @@ const Benefits = () => {
             </p>
             <PricingDisplay
                 topText='You save'
-                price={750}
+                priceFormatted='$750'
                 isRecurring={true}
                 bottomText='with a ceramic coating'
             />
@@ -59,11 +54,11 @@ const Benefits = () => {
             </p>
             <PricingDisplay
                 topText='Ceramic coated cars preserve'
-                price={2500}
+                priceFormatted='$2,500+'
                 bottomText='of their value.'
             />
         </div>
-        <div className='mb-8'>
+        <div>
             <h2 className='font-bold text-lg'>Zero Hassle Concierge</h2>
             <p>
             Our Zero Hassle Concierge service is designed to make protecting your vehicle effortless from start to finish. 

@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Testimonials from './Testimonials'
 import OurGuarantee from './OurGuarantee'
 import Benefits from './Benefits'
+import WhyChoose from './WhyChoose'
 
 const Referral = () => {
   return (
@@ -11,6 +12,7 @@ const Referral = () => {
         <Testimonials/>
         <OurGuarantee/>
         <Benefits/>
+        <WhyChoose/>
     </div>
   )
 }
