@@ -10,7 +10,7 @@ import { usePathname } from 'next/navigation';
 
 const Footer = () => {
 
-    const PATHNAMES_TO_SHOW_FINEPRINT = ['/8-year-ceramic-coating'];
+    const PATHNAMES_TO_SHOW_FINEPRINT = ['/8-year-ceramic-coating', '/referral'];
     const [showFinePrint, setShowFinePrint] = useState(false);
     const pathname = usePathname();
 
