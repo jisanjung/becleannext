@@ -1,4 +1,4 @@
-import VehicleTypeRadio from "./VehicleTypeRadio "
+import VehicleTypeRadio from "./VehicleTypeRadio"
 
 const VehicleTypeSection = ({ className }) => {
   return (
