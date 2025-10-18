@@ -276,3 +276,16 @@ export const REFERRAL_WORK_EXAMPLE_IMG_PATHS = [
   '/referral/work_example9.JPG',
   '/referral/work_example12.JPG',
 ];
+
+export const AFFILIATE_BOOKING_LINK_MAPPING = {
+  '1': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/BFGNWXGAY574WR7QSB2FYSUU',
+  '2': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/PVYOM4NYIYQSZVOBMT3AFDHS',
+  '3': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/GQZ6GM5MTINT3A3K55UKMWRZ',
+  '4': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/2GKZ3QIAR4HXVWCM2PTDQUW3',
+  '5': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/AQQAZAK22OKZ5TSDKCA7T7LI',
+  '6': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/MVOHYIHDDBGBCXIGFOOIOF35',
+  '7': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/ZQBI2CTZY4F6RW5WKK6JUNDC',
+  '8': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/ZWD44TYJGMS2FSHMBHM3AEJY',
+  '9': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/VYOZXTOCO5EUCDHIDB5QMR2J',
+  '10': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/OHFDRBMA2ZPMV5NA6TBFPMAY',
+};
