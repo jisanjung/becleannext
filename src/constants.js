@@ -263,3 +263,16 @@ export const customerReviews = [
 ];
 
 export const REFERRAL_NUMBER_OF_SPOTS_REMAINING = 3;
+
+export const REFERRAL_WORK_EXAMPLE_IMG_PATHS = [
+  '/referral/work_example1.JPG',
+  '/referral/work_example2.JPG',
+  '/referral/work_example3.jpeg',
+  '/referral/work_example4.JPG',
+  '/referral/work_example5.JPG',
+  '/referral/work_example6.JPG',
+  '/referral/work_example7.JPG',
+  '/referral/work_example8.JPG',
+  '/referral/work_example9.JPG',
+  '/referral/work_example12.JPG',
+];

@@ -8,12 +8,14 @@ import Benefits from './Benefits'
 import WhyChoose from './WhyChoose'
 import Endorsements from './Endorsements'
 import FaqSection from '@/components/FaqSection'
+import OurWork from './OurWork';
 
 const Referral = () => {
   return (
     <div>
         <Hero/>
         <Testimonials/>
+        <OurWork/>
         <OurGuarantee/>
         <Benefits/>
         <WhyChoose/>

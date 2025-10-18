@@ -37,6 +37,13 @@ const Hero = () => {
                     className="flex-shrink-0 mr-2 text-xl"
                     style={{ color: '#43BDD5' }}
                 />
+                <p>Premium Wash Paint Polishing</p>
+            </li>
+            <li className="flex items-center mb-2">
+                <FaRegCheckCircle 
+                    className="flex-shrink-0 mr-2 text-xl"
+                    style={{ color: '#43BDD5' }}
+                />
                 <p>5 Spots / Week</p>
             </li>
         </ul>

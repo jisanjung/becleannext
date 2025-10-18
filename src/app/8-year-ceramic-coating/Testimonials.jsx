@@ -5,28 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GoStarFill } from "react-icons/go";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { customerReviews } from '@/constants';
-
-
-function NextArrow(props) {
-    const { className, style, onClick } = props;
-    return <MdOutlineKeyboardArrowRight
-        className={className}
-        style={{ ...style, display: "block", color: 'black', right: '0', zIndex: '1', width: '36px', height: '36px' }}
-        onClick={onClick}
-    />;
-  }
-  
-  function PrevArrow(props) {
-    const { className, style, onClick } = props;
-    return <MdOutlineKeyboardArrowLeft
-        className={className}
-        style={{ ...style, display: "block", color: 'black', left: '0', zIndex: '1', width: '36px', height: '36px' }}
-        onClick={onClick}
-    />;
-  }
+import SlideShowNextArrow from '@/components/SlideShowNextArrow';
+import SlideShowPrevArrow from '@/components/SlideShowPrevArrow';
 
   function ReviewCard(props) {
     const { text, name, date } = props;
@@ -66,8 +47,8 @@ const Testimonials = () => {
         slidesToShow: isDesktop ? 3 : 1,
         slidesToScroll: 1,
         autoplay: true,
-        nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>
+        nextArrow: <SlideShowNextArrow/>,
+        prevArrow: <SlideShowPrevArrow/>
     };
 
   return (
