@@ -10,10 +10,10 @@ import Endorsements from './Endorsements'
 import FaqSection from '@/components/FaqSection'
 import OurWork from './OurWork';
 
-const Referral = () => {
+const Referral = ({ slug }) => {
   return (
     <div>
-        <Hero/>
+        <Hero slug={slug}/>
         <Testimonials/>
         <OurWork/>
         <OurGuarantee/>

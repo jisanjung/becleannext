@@ -1,4 +1,6 @@
+import Referral from "@/app/referral/Referral";
 import { AFFILIATE_BOOKING_LINK_MAPPING } from "@/constants";
+import { notFound } from "next/navigation";
 
 export const metadata = {
     title: "Affiliate VIP Ceramic Coating | beclean",
@@ -10,12 +12,14 @@ const Affiliate = async ({ params }) => {
     const { slug } = await params;
     const slugIsNotNumeric = isNaN(Number(slug));
 
-    if (slugIsNotNumeric && !(slug in AFFILIATE_BOOKING_LINK_MAPPING)) {
-        return <div>"{slug}" not found</div>
+    if (slugIsNotNumeric || !(slug in AFFILIATE_BOOKING_LINK_MAPPING)) {
+        return notFound();
     }
 
   return (
-    <div>Affiliate link: {AFFILIATE_BOOKING_LINK_MAPPING[slug]}</div>
+    <main>
+        <Referral slug={slug}/>
+    </main>
   )
 }
 

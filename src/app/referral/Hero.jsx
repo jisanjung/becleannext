@@ -1,7 +1,7 @@
-import { REFERRAL_NUMBER_OF_SPOTS_REMAINING } from "@/constants";
+import { AFFILIATE_BOOKING_LINK_MAPPING, REFERRAL_NUMBER_OF_SPOTS_REMAINING } from "@/constants";
 import { FaRegCheckCircle } from "react-icons/fa";
 
-const Hero = () => {
+const Hero = ({ slug }) => {
   return (
     <section className="wrapper px-4 py-8">
         <h1 className="text-2xl font-bold text-center mb-2">Keep Your Car's Shine for 8+ Years - VIP Ceramic Coating</h1>
@@ -48,7 +48,9 @@ const Hero = () => {
             </li>
         </ul>
         <small className="text-center block text-orange-500 mb-1">Only {REFERRAL_NUMBER_OF_SPOTS_REMAINING} spots remaining</small>
-        <a href="/book" className="button block text-center">
+        <a
+            href={slug ? AFFILIATE_BOOKING_LINK_MAPPING[slug] : '/book'}
+            className="button block text-center">
             Reserve My Spot
         </a>
     </section>
