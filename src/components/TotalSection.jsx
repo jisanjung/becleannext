@@ -48,7 +48,7 @@ const TotalSection = ({ className }) => {
                 <ul className='mb-6 text-lg'>
                     <li className={`${!vehicleTypeSelected ? 'hidden' : 'flex'} items-center`}>
                         <TfiSpray className='mr-2'/>
-                        2-layer Ceramic Coating
+                        8-year Ceramic Coating
                     </li>
                     <li className={`${!glassCoatingSelected || glassCoatingSelected === 'none' ? 'hidden' : 'flex'} items-center`}>
                         <GoShieldCheck className='mr-2'/>
