@@ -33,15 +33,12 @@ const WindowCoatingInfo = ({ className }) => {
                 <h3 className='mb-4'><span className='text-2xl font-bold text-gray-500 lg:text-4xl'>Curated care.</span>
                     <br/>
                     <span className='text-2xl font-bold lg:text-4xl'>
-                        Ceramic Coating Maintenance Kit.
+                        Harleysville + 50 Mile Pickup Area.
                     </span>
                 </h3>
                 <p className='mb-8 lg:w-2/3 lg:text-lg lg:mb-0'>
-                    Your maintenance kit is  a collection of products designed to preserve the full potential of your ceramic coating.
-                    Each item is hand-selected to work in perfect harmony with the coatings we apply. Unlike generic car care products, 
-                    this kit enhances gloss, reinforces hydrophobic behavior, and maintains the slick, clean feel you invested in. Every wash, every wipe,
-                    every detail is engineered to protect your finish and elevate your maintenance routine. This is not just upkeep. 
-                    It's the discipline behind lasting brilliance.
+                    Distance is never a concern. With our complimentary concierge service, we’ll come to you anywhere within a 50-mile radius. 
+                    Whether at home or at work, we’ll handle pickup and return your vehicle by the end of the day, professionally serviced and ready to impress.
                 </p>
             </div>
         </div>
