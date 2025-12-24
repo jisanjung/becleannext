@@ -27,7 +27,7 @@ export const metadata = {
 };
 export default function ${capitalize(pageName)}Page() {
   return (
-    <main>
+    <main className="wrapper">
         ${pageName} page
     </main>
   );
