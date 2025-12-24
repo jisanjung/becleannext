@@ -35,7 +35,7 @@ body {
     background: #369fb4;
 }
 .wrapper {
-     
+  @apply px-4 md:px-10;
 }
 
 .button {
