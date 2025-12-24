@@ -27,7 +27,7 @@ const Header = () => {
                 width: '50px'
               }}>
                 <Image
-                  src='/beclean_logo.png'
+                  src='/beclean_logo_wreath.png'
                   alt='Beclean Logo'
                   width={100}
                   height={100}
