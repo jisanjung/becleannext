@@ -4,7 +4,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 const Hero = ({ slug }) => {
   return (
     <section className="wrapper px-4 py-8">
-        <h1 className="text-2xl font-bold text-center mb-2">Keep Your Car's Shine for 8+ Years - VIP Ceramic Coating</h1>
+        <h1 className="text-2xl font-bold text-center mb-2">Keep Your Car's Shine for 8 Years - VIP Ceramic Coating</h1>
         <p className="text-gray-500 text-center mb-4">Free pickup, same-day delivery, and premium ceramic protection that lasts.</p>
         <img
             src='/referral/before_after.png'
