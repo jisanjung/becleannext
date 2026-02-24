@@ -25,7 +25,7 @@ export default function AboutSection() {
         {/* RIGHT IMAGE */}
         <div className="relative w-full h-[320px] lg:h-[400px] rounded-3xl overflow-hidden shadow-xl">
           <Image
-            src="/referral/work_example1.jpg" // replace with your actual image path
+            src="/referral/work_example1.JPG"
             alt="Ceramic coated vehicle"
             fill
             className="object-cover"

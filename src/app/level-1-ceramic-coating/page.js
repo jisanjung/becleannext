@@ -4,8 +4,8 @@
 */
 
 export const metadata = {
-  title: "Level 2 Ceramic Coating Service: 4 Year Protection | beclean Ceramic Coating Studio",
-  description: "Our level 2 ceramic coating service showcases 4 year durability rating while sporting all around ceramic coating performance. Excellent for all vehicles.",
+  title: "Level 1 Ceramic Coating Service: 1 Year Protection | beclean Ceramic Coating Studio",
+  description: "Professional 1-year ceramic coating with enhanced gloss, hydrophobic protection, and easier maintenance. True ceramic performance for daily-driven vehicles.",
 };
 
 import Service from "./Service";

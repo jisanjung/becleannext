@@ -20,6 +20,7 @@ const Contact = ({ className }) => {
             <form
               action="https://formspree.io/f/myzgpqlg"
               method="POST"
+              className="space-y-6"
             >
               <input type="text" placeholder="Name" name="Name" className="textbox" required/>
               <select 
