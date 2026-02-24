@@ -292,26 +292,3 @@ export const AFFILIATE_BOOKING_LINK_MAPPING = {
   '9': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/VYOZXTOCO5EUCDHIDB5QMR2J',
   '10': 'https://book.squareup.com/appointments/r574tp141ygs7p/location/LV0BMBBEBAGWF/services/OHFDRBMA2ZPMV5NA6TBFPMAY',
 };
-
-export const HP_FAQ_LIST = [
-  {
-    question: "Is vehicle pick up and delivery really free, or are there hidden fees?",
-    answer: "Yes, it's 100% free. No fine print, no surprise charges, delivery is on us. Excellence should be effortless."
-  },
-  {
-    question: "How far will you travel for the free pickup and drop-off service?",
-    answer: "We proudly offer free delivery within a 50-mile radius of our shop. If you're outside that zone, reach out and we’ll work with you to make it happen."
-  },
-  {
-    question: "What’s included in the ceramic coating gift box?",
-    answer: "Every client receives our signature gift box: the Huntington Beach Concours d'Elegance award-winning microfiber towel, a premium quick detailer, and a tailored maintenance guide. Everything you need to keep your coating flawless."
-  },
-  {
-    question: "Do I need to be home for vehicle pickup or delivery?",
-    answer: "No, as long as we've coordinated access ahead of time. We’ll handle the logistics so your day keeps moving while we do the heavy lifting."
-  },
-  {
-    question: "How do I use the items in the gift box to maintain my ceramic coating?",
-    answer: "The included guide walks you through washing, decontaminating, and how to avoid common mistakes. It's designed so you can maintain that showroom shine with confidence."
-  },
-];
