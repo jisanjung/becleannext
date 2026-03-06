@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Hero = ({ className }) => {
   return (
-    <div className={`service-hero ${className}`}>
+    <div className="service-hero-level1">
         <div className="wrapper px-4 md:px-10 py-4">
             <h1 className="text-center font-bold mb-1 text-white lg:text-2xl lg:my-4">Level 1 Ceramic Coating Service</h1>
             <h2 className="text-center font-bold text-2xl text-white lg:text-5xl">1 Year Protection</h2>

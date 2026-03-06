@@ -64,24 +64,30 @@ const MobileNav = ({ menuToggled, className }) => {
           </button>
 
             <ul className="space-y-6">
-              <li>
-                <a href="/level-1-ceramic-coating">
-                  Level 1 Ceramic Coating
-                </a>
-              </li>
+            <li>
+              <a href="/services" className="font-semibold">
+                Explore All Services
+              </a>
+            </li>
 
-              <li>
-                <a href="/level-2-ceramic-coating">
-                  Level 2 Ceramic Coating
-                </a>
-              </li>
+            <li>
+              <a href="/level-1-ceramic-coating">
+                Level 1 Ceramic Coating
+              </a>
+            </li>
 
-              <li>
-                <a href="/level-3-ceramic-coating">
-                  Level 3 Ceramic Coating
-                </a>
-              </li>
-            </ul>
+            <li>
+              <a href="/level-2-ceramic-coating">
+                Level 2 Ceramic Coating
+              </a>
+            </li>
+
+            <li>
+              <a href="/level-3-ceramic-coating">
+                Level 3 Ceramic Coating
+              </a>
+            </li>
+          </ul>
           </div>
 
         </div>

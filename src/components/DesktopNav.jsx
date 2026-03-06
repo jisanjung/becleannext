@@ -9,7 +9,7 @@ const DesktopNav = ({ className }) => {
         </li>
 
         <li className="relative pr-4 group">
-          <Link href="/level-2-ceramic-coating" className="block hover:font-bold">
+          <Link href="/services" className="block hover:font-bold">
             Services
           </Link>
 

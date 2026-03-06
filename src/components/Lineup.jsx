@@ -2,18 +2,16 @@
 
 import Image from "next/image"
 import { useRef, useState } from "react"
-import Link from "next/link"
 
 const tiers = [
   {
     name: "Level 3 Ceramic Coating",
+    href: "/level-3-ceramic-coating",
     years: "9 Year Protection",
     duration: "9",
     description: "For those who want the best.",
     price: "From $3,000",
     image: "/level_3_black.png",
-    learnMoreHref: "/level-3-ceramic-coating",
-    bookHref: "/book",
     features: [
       { label: "Windows coated", icon: "/icons/windshield.png", included: true },
       { label: "Decontamination wash", icon: "/icons/car_wash_white.png", included: true },
@@ -28,21 +26,20 @@ const tiers = [
   },
   {
     name: "Level 2 Ceramic Coating",
+    href: "/level-2-ceramic-coating",
     years: "4 Year Protection",
     duration: "4",
     description: (
       <>
-      The perfect harmony {' '}
-      <br className="lg:hidden" />
-      of performance,{' '}
-      <br className="lg:hidden" />
-      protection, & polish.
+        The perfect harmony
+        <br className="lg:hidden" />
+        of performance,
+        <br className="lg:hidden" />
+        protection, & polish.
       </>
     ),
     price: "From $1,500",
     image: "/level_2_black.png",
-    learnMoreHref: "/level-2-ceramic-coating",
-    bookHref: "/book",
     features: [
       { label: "Windows coated", icon: "/icons/windshield.png", included: false },
       { label: "Decontamination wash", icon: "/icons/car_wash_white.png", included: true },
@@ -57,13 +54,12 @@ const tiers = [
   },
   {
     name: "Level 1 Ceramic Coating",
+    href: "/level-1-ceramic-coating",
     years: "1 Year Protection",
     duration: "1",
     description: "The minimum in ceramic protection.",
     price: "From $1,000",
     image: "/level_1_black.png",
-    learnMoreHref: "/level-1-ceramic-coating",
-    bookHref: "/book",
     features: [
       { label: "Windows coated", icon: "/icons/windshield.png", included: false },
       { label: "Decontamination wash", icon: "/icons/car_wash_white.png", included: true },
@@ -134,23 +130,25 @@ export default function Lineup() {
                   </h3>
                   <p className="text-base font-semibold text-white mt-3">{tier.years}</p>
                   <p className="text-sm text-white mt-4 min-h-[80px] px-0 lg:px-6">{tier.description}</p>
+                  <p className="text-base font-semibold mt-0">{tier.price}</p>
 
                   {/* Buttons */}
                   <div className="flex gap-4 mt-5 justify-start lg:justify-center">
-                    <Link
-                    href={tier.learnMoreHref}
+                    <a
+                    href={tier.href}
                     className="bg-[#43BDD5] text-white text-sm px-4 py-2 rounded-full"
                   >
                     Learn More
-                  </Link>
-                  <Link
-                    href={tier.bookHref}
-                    className="text-[#43BDD5] text-sm flex items-center gap-1 group"
+                  </a>
+
+                  <a
+                    href="/book"
+                    className="text-[#43BDD5] text-sm flex items-center gap-1"
                   >
                     Book
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                      className="h-5 w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -158,8 +156,8 @@ export default function Lineup() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
-                  </Link>
-                  </div>
+                  </a>
+                </div>
 
                   {/* Divider */}
                   <div className="border-t border-white my-6"></div>
@@ -240,20 +238,21 @@ export default function Lineup() {
                 <p className="text-base font-semibold mt-0">{tier.price}</p>
 
                 <div className="flex justify-center gap-4 mt-5">
-                <Link
-                  href={tier.learnMoreHref}
+                <a
+                  href={tier.href}
                   className="bg-[#43BDD5] text-white text-sm px-4 py-2 rounded-full"
                 >
                   Learn More
-                </Link>
-                  <Link
-                  href={tier.bookHref}
-                  className="text-[#43BDD5] text-sm flex items-center gap-1 group"
+                </a>
+
+                <a
+                  href="/book"
+                  className="text-[#43BDD5] text-sm flex items-center gap-1"
                 >
                   Book
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                    className="h-5 w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -261,13 +260,13 @@ export default function Lineup() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
-                </div>
+                </a>
+              </div>
               </div>
             ))}
           </div>
 
-          {/* DIVIDER */}
+          {/* ONE TRUE DIVIDER */}
           <div className="border-t border-white my-10"></div>
 
           {/* Bottom Section (Durability + Features) */}
