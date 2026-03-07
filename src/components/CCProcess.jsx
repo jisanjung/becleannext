@@ -54,7 +54,7 @@ const steps = [
 ];
 
 export default function CCProcess() {
-  const [activeStep, setActiveStep] = useState(null);
+  const [activeStep, setActiveStep] = useState(0);
 
   return (
     <section className="w-full bg-[#363434] pt-3 pb-20 lg:pt-20">
@@ -93,7 +93,7 @@ export default function CCProcess() {
               <button
                 key={step.id}
                 onClick={() =>
-                  setActiveStep(activeStep === step.id ? null : step.id)
+                  setActiveStep(step.id)
                 }
                 className={`w-full flex justify-between items-start font-semibold
                   ${

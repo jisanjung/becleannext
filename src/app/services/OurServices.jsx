@@ -90,23 +90,6 @@ export default function Lineup() {
             < br/> 
             Services.
           </h2>
-
-        <Link
-        href="#lineupSection"
-        className="text-[#43BDD5] mt-4 lg:mt-0 flex items-center gap-1 group"
-        >
-        Compare all ceramic coating services
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-        >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-        </Link>
         </div>
 
         {/* Mobile Swipe Version */}
