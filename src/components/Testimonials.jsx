@@ -17,6 +17,18 @@ export default function Testimonials() {
   const [active, setActive] = useState(0)
   const touchStartX = useRef(null)
 
+  const next = () => {
+    if (active < reviews.length - 1) {
+      setActive(active + 1)
+    }
+  }
+
+  const prev = () => {
+    if (active > 0) {
+      setActive(active - 1)
+    }
+  }
+
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX
   }
@@ -26,18 +38,10 @@ export default function Testimonials() {
 
     const touchEndX = e.changedTouches[0].clientX
     const diff = touchStartX.current - touchEndX
+    const threshold = 50
 
-    const threshold = 50 // minimum swipe distance
-
-    if (diff > threshold && active < reviews.length - 1) {
-      // swipe left → next
-      setActive(active + 1)
-    }
-
-    if (diff < -threshold && active > 0) {
-      // swipe right → prev
-      setActive(active - 1)
-    }
+    if (diff > threshold) next()
+    if (diff < -threshold) prev()
 
     touchStartX.current = null
   }
@@ -59,17 +63,57 @@ export default function Testimonials() {
         {/* Slideshow */}
         <div className="px-2 py-4 lg:p-6">
           <div
-            className="relative mx-auto w-full max-w-none lg:max-w-3xl aspect-[4/3] lg:aspect-[16/9]"
+            className="relative mx-auto w-full max-w-none lg:max-w-3xl aspect-[4/3] lg:aspect-[16/9] overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
           >
-            <Image
-              src={reviews[active]}
-              alt={`Google review ${active + 1}`}
-              fill
-              className="object-contain"
-              priority={active === 0}
-            />
+
+            {/* Sliding Track */}
+            <div
+              className="flex h-full transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${active * 100}%)` }}
+            >
+              {reviews.map((src, index) => (
+                <div key={index} className="relative min-w-full h-full">
+                  <Image
+                    src={src}
+                    alt={`Google review ${index + 1}`}
+                    fill
+                    className="object-contain"
+                    priority={index === 0}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Left Arrow */}
+            <button
+              onClick={prev}
+              className="absolute left-2 top-1/2 -translate-y-1/2
+              bg-black/40 hover:bg-black/60
+              text-white text-3xl
+              w-10 h-10 rounded-full
+              flex items-center justify-center
+              cursor-pointer
+              transition hover:scale-110"
+            >
+              ‹
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={next}
+              className="absolute right-2 top-1/2 -translate-y-1/2
+              bg-black/40 hover:bg-black/60
+              text-white text-3xl
+              w-10 h-10 rounded-full
+              flex items-center justify-center
+              cursor-pointer
+              transition hover:scale-110"
+            >
+              ›
+            </button>
+
           </div>
         </div>
 
@@ -80,7 +124,7 @@ export default function Testimonials() {
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`h-3 rounded-full shrink-0 transition-all duration-300 ${
+                className={`cursor-pointer h-3 rounded-full shrink-0 transition-all duration-300 ${
                   active === index
                     ? 'w-13 bg-white'
                     : 'w-3 bg-white/60 hover:bg-white'
