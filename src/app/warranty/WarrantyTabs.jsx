@@ -4,23 +4,23 @@ import { useState } from "react";
 
 const WARRANTY_VERSIONS = [
   {
-    id: "6 Year Warranty",
-    label: "6 Year Warranty",
-    title: "BeClean Six (6) Year Limited Warranty",
+    id: "4 Year Warranty",
+    label: "4 Year Warranty",
+    title: "BeClean Four (4) Year Limited Warranty",
     subtitle: "Applicable to BeClean Ceramic Coating Installation Only",
    sections: [
       {
         heading: null,
         body: [
-          "This Limited Warranty applies exclusively to the installation of BeClean Ceramic Coating and covers defects in workmanship when the service is performed and maintained in accordance with BeClean’s published guidelines. The warranty is valid for a period of six (6) years from the date of installation for the original purchaser (“Warranty Period”).",
+          "This Limited Warranty applies exclusively to the installation of BeClean Ceramic Coating and covers defects in workmanship when the service is performed and maintained in accordance with BeClean’s published guidelines. The warranty is valid for a period of four (4) years from the date of installation for the original purchaser (“Warranty Period”).",
           "BeClean’s published guidelines include, but are not limited to, the instructions and standards outlined in official user manuals, maintenance guides, and service communications.",
-          "Please Note: All claims made under this Six-Year Limited Warranty are subject to the terms and conditions set forth herein. By scheduling and completing the ceramic coating installation, both BeClean and the purchaser acknowledge and accept these terms."
+          "Please Note: All claims made under this Four-Year Limited Warranty are subject to the terms and conditions set forth herein. By scheduling and completing the ceramic coating installation, both BeClean and the purchaser acknowledge and accept these terms."
         ]
       },
       {
         heading: "LIMITED SERVICE WARRANTY",
         body: [
-          "BeClean Solutions L.L.C. (the “Company”) expressly warrants to the owner that, for a period of six (6) years from the date of installation (the “Warranty Period”), the Company will cover the vehicle’s paint finish against oxidation, loss of gloss, UV damage, and color fading, solely as a result of defects in workmanship during the ceramic coating installation. This Limited Warranty only applies to the Company’s installations.",
+          "BeClean Solutions L.L.C. (the “Company”) expressly warrants to the owner that, for a period of four (4) years from the date of installation (the “Warranty Period”), the Company will cover the vehicle’s paint finish against oxidation, loss of gloss, UV damage, and color fading, solely as a result of defects in workmanship during the ceramic coating installation. This Limited Warranty only applies to the Company’s installations.",
           "The Company will, at its option, remove or replace the installed coating without charge, or refund the cost of the service, if the coating fails or does not perform as warranted solely due to installation within the Warranty Period, subject to the exclusions set forth in this Limited Warranty. If the Company elects to replace the coating, it will remove and reapply the coating to areas determined by the Company in its sole discretion. The Company will provide all labor associated with the service.",
           "The refund of the service cost or reapplication of the defective coating are the exclusive remedies for all services covered under this Limited Service Warranty. During the Warranty Period, the Company’s obligation shall be limited to repair or replacement of only the specific areas affected by installation defects.",
           "Any reapplication shall remain subject to the original Warranty Period, and will not extend or restart the Warranty Period.",
@@ -30,7 +30,7 @@ const WARRANTY_VERSIONS = [
       {
         heading: "WHAT IS COVERED UNDER THIS WARRANTY?",
         body: [
-          "This warranty exclusively covers the ceramic coating installation on the vehicle. The Warranty Period begins on the date of vehicle drop-off and extends for six (6) years. This warranty is non-transferable and does not apply to subsequent owners."
+          "This warranty exclusively covers the ceramic coating installation on the vehicle. The Warranty Period begins on the date of vehicle drop-off and extends for nine (9) years. This warranty is non-transferable and does not apply to subsequent owners."
         ]
       },
       {
@@ -156,23 +156,23 @@ const WARRANTY_VERSIONS = [
     ]
   },
   {
-    id: "Lifetime Warranty",
-    label: "Lifetime Warranty",
-    title: "BeClean Lifetime Limited Warranty",
+    id: "9 Year Warranty",
+    label: "9 Year Warranty",
+    title: "BeClean Nine (9) Year Limited Warranty",
     subtitle: "Applicable to BeClean Ceramic Coating Installation Only",
    sections: [
       {
         heading: null,
         body: [
-          "This Limited Warranty applies exclusively to the installation of BeClean Ceramic Coating and covers defects in workmanship when the service is performed and maintained in accordance with BeClean’s published guidelines. The warranty is valid for the lifetime of vehicle ownership from the date of installation for the original purchaser (“Warranty Period”).",
+          "This Limited Warranty applies exclusively to the installation of BeClean Ceramic Coating and covers defects in workmanship when the service is performed and maintained in accordance with BeClean’s published guidelines. The warranty is valid for nine (9) years of vehicle ownership from the date of installation for the original purchaser (“Warranty Period”).",
           "BeClean’s published guidelines include, but are not limited to, the instructions and standards outlined in official user manuals, maintenance guides, and service communications.",
-          "Please Note: All claims made under this Lifetime Limited Warranty are subject to the terms and conditions set forth herein. By scheduling and completing the ceramic coating installation, both BeClean and the purchaser acknowledge and accept these terms."
+          "Please Note: All claims made under this Nine-Year Limited Warranty are subject to the terms and conditions set forth herein. By scheduling and completing the ceramic coating installation, both BeClean and the purchaser acknowledge and accept these terms."
         ]
       },
       {
         heading: "LIMITED SERVICE WARRANTY",
         body: [
-          "BeClean Solutions L.L.C. (the “Company”) expressly warrants to the owner that, for a period of six (6) years from the date of installation (the “Warranty Period”), the Company will cover the vehicle’s paint finish against oxidation, loss of gloss, UV damage, and color fading, solely as a result of defects in workmanship during the ceramic coating installation. This Limited Warranty only applies to the Company’s installations.",
+          "BeClean Solutions L.L.C. (the “Company”) expressly warrants to the owner that, for a period of nine (9) years from the date of installation (the “Warranty Period”), the Company will cover the vehicle’s paint finish against oxidation, loss of gloss, UV damage, and color fading, solely as a result of defects in workmanship during the ceramic coating installation. This Limited Warranty only applies to the Company’s installations.",
           "The Company will, at its option, remove or replace the installed coating without charge, or refund the cost of the service, if the coating fails or does not perform as warranted solely due to installation within the Warranty Period, subject to the exclusions set forth in this Limited Warranty. If the Company elects to replace the coating, it will remove and reapply the coating to areas determined by the Company in its sole discretion. The Company will provide all labor associated with the service.",
           "The refund of the service cost or reapplication of the defective coating are the exclusive remedies for all services covered under this Limited Service Warranty. During the Warranty Period, the Company’s obligation shall be limited to repair or replacement of only the specific areas affected by installation defects.",
           "Any reapplication shall remain subject to the original Warranty Period, and will not extend or restart the Warranty Period.",
@@ -182,7 +182,7 @@ const WARRANTY_VERSIONS = [
       {
         heading: "WHAT IS COVERED UNDER THIS WARRANTY?",
         body: [
-          "This warranty exclusively covers the ceramic coating installation on the vehicle. The Warranty Period begins on the date of vehicle drop-off and extends for the lifetime of vehicle ownership. This warranty is non-transferable and does not apply to subsequent owners."
+          "This warranty exclusively covers the ceramic coating installation on the vehicle. The Warranty Period begins on the date of vehicle drop-off and extends for nine (9) years of vehicle ownership. This warranty is non-transferable and does not apply to subsequent owners."
         ]
       },
       {
