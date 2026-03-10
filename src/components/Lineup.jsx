@@ -59,7 +59,7 @@ const tiers = [
     duration: "1",
     description: "The minimum in ceramic protection.",
     price: "From $1,000",
-    image: "/level_1_black.png",
+    image: "/level_1_black_fixed.png",
     features: [
       { label: "Windows coated", icon: "/icons/windshield.png", included: false },
       { label: "Decontamination wash", icon: "/icons/car_wash_white.png", included: true },
