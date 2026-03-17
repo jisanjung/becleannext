@@ -12,7 +12,7 @@ const includedItems = [
   },
   {
     id: 'warranty',
-    title: '9 Year Warranty',
+    title: 'Warranty',
     icon: '/services/warranty_blue.png',
     modalImage: '/services/warranty_blue.png',
     description:
@@ -24,7 +24,7 @@ const includedItems = [
     icon: '/services/gift_blue.png',
     modalImage: '/services/gift_box.JPG',
     description:
-      'Our Level 3 ceramic coating service doesn’t end when your car leaves the studio. The included gift box ensures the curing process is seamless. During the 7-day curing window, use the provided quick detailer and microfiber towel to address bird droppings, tar, or other contaminants',
+      'Our Level ceramic coating service doesn’t end when your car leaves the studio. The included gift box ensures the curing process is seamless. During the 7-day curing window, use the provided quick detailer and microfiber towel to address bird droppings, tar, or other contaminants',
   },
 ]
 
@@ -36,13 +36,13 @@ export default function Deliverables() {
       <div className="max-w-7xl mx-auto px-4 md:px-10">
         {/* Header */}
 <h2 className="mb-6 text-2xl font-bold text-white lg:text-5xl">
-  What’s Included in Our Level 3 
+  What’s Included in Our Harleysville
   <br/>
   Ceramic Coating Service?
 </h2>
 
         <p className="text-white text-lg lg:text-xl max-w-full lg:max-w-none">
-          At beclean Ceramic Coating Studio, our 9 year ceramic coating is designed for owners who want extended ceramic protection. The service is structured for durability, gloss, and surface performance over years of real-world driving. Because lasting protection is measured not just by the coating applied, but by how your vehicle holds its finish over time.
+          At beclean ceramic coating studio of Harleysville, our service goes beyond our ceramic coating services. What we include with every ceramic coating service is there to make sure that your ceramic coating lasts as long as possible. It’s not only about the service, but the journey your car goes on after.
         </p>
 
         {/* Cards */}
