@@ -37,7 +37,7 @@ export default function CeramicCTA() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative min-h-[400px]">
+        <div className="relative min-h-[400px] hidden lg:block">
           <Image
             src="/landing/home_section.jpeg"
             alt="Car being washed"

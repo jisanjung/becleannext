@@ -24,7 +24,7 @@ const includedItems = [
     icon: '/services/gift_blue.png',
     modalImage: '/services/gift_box.JPG',
     description:
-      'Our Level ceramic coating service doesn’t end when your car leaves the studio. The included gift box ensures the curing process is seamless. During the 7-day curing window, use the provided quick detailer and microfiber towel to address bird droppings, tar, or other contaminants',
+      'Our ceramic coating services doesn’t end when your car leaves the studio. The included gift box ensures the curing process is seamless. During the 7-day curing window, use the provided quick detailer and microfiber towel to address bird droppings, tar, or other contaminants',
   },
 ]
 
