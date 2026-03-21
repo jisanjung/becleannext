@@ -7,7 +7,7 @@ import CCProcess from "./CCProcess";
 import Logistics from "./Logisitcs";
 import Lineup from "@/components/Lineup";
 import OurWork from "@/components/OurWork";
-import ServiceAreas from "./Serviceareas";
+import ServiceAreas from "./ServiceAreas";
 
 const Location = () => {
   return (
