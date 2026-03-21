@@ -53,7 +53,7 @@ const steps = [
   },
 ];
 
-export default function CCProcess() {
+export default function CCProcess({ location }) {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
@@ -77,7 +77,7 @@ export default function CCProcess() {
 
       {/* Intro Text */}
       <p className="mx-auto mb-10 max-w-md text-center text-white text-sm sm:text-base lg:max-w-3xl lg:text-xl px-6 sm:px-">
-        At beclean ceramic coating studio of Skippack, our innovative ceramic coating service was created to highest level of ease, convince, and craftsmanship as possible. Look below to see the treatment that you receive when it arrives at our Harleysville shop.
+        At beclean ceramic coating studio of {location}, our innovative ceramic coating service was created to highest level of ease, convince, and craftsmanship as possible. Look below to see the treatment that you receive when it arrives at our Harleysville shop.
       </p>
 
       {/* Main Card Container */}

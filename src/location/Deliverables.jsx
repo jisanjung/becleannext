@@ -28,7 +28,7 @@ const includedItems = [
   },
 ]
 
-export default function Deliverables() {
+export default function Deliverables({ location }) {
   const [activeItem, setActiveItem] = useState(null)
 
   return (
@@ -36,17 +36,17 @@ export default function Deliverables() {
       <div className="max-w-7xl mx-auto px-4 md:px-10">
         {/* Header */}
 <h2 className="mb-6 text-2xl font-bold text-white lg:text-5xl">
-  What’s Included in Our Fort Washington
+  What’s Included in Our {location}
   <br/>
   Ceramic Coating Service?
 </h2>
 
         <p className="text-white text-lg lg:text-xl max-w-full lg:max-w-none">
-          At beclean ceramic coating studio of Fort Washington, our service goes beyond our ceramic coating services. What we include with every ceramic coating service is there to make sure that your ceramic coating lasts as long as possible. It’s not only about the service, but the journey your car goes on after.
+          At beclean ceramic coating studio of {location}, our service goes beyond our ceramic coating services. What we include with every ceramic coating service is there to make sure that your ceramic coating lasts as long as possible. It’s not only about the service, but the journey your car goes on after.
         </p>
 
         {/* Cards */}
-        <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="mt-10 grid grid-xs-1 gap-6 lg:grid-cols-3">
           {includedItems.map((item) => (
             <button
               key={item.id}

@@ -26,7 +26,7 @@ export default function ServiceAreas() {
         {/* IMAGE */}
         <div className="relative w-full h-[200px] md:h-[320px] rounded-xl overflow-hidden">
         <Image
-            src="/referral/work_example9.JPG"
+            src="/referral/work_example1.JPG"
             alt="Ceramic coating service areas"
             fill
             className="object-cover"
@@ -46,16 +46,22 @@ export default function ServiceAreas() {
             Our teams are highly experienced, knowledgeable, and we stand
             by our work. Contact us today to set up an appointment.
           </p>
-
-          <ul className="list-disc list-inside space-y-2 text-black">
+          
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
 
             {locations.map((city) => (
               <li key={city.slug}>
                 <Link
                   href={`/${city.slug}`}
-                  className="hover:underline"
+                  className="
+                    block px-4 py-3 rounded-lg border border-gray-200
+                    text-gray-800 font-medium
+                    hover:border-[#43BDD5] hover:text-[#43BDD5]
+                    hover:shadow-sm hover:-translate-y-[1px]
+                    transition-all duration-200
+                  "
                 >
-                  Ceramic Coating in {city.name}
+                  {city.name}
                 </Link>
               </li>
             ))}

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function LocationHero({ location }) {
+export default function Hero({ location, heroImgPath }) {
   return (
     <>
       {/* HERO */}
@@ -9,7 +9,7 @@ export default function LocationHero({ location }) {
 
         {/* Background Image */}
         <Image
-          src="/location/lansdale.jpg"
+          src={heroImgPath}
           alt={`${location} Ceramic Coating`}
           fill
           priority
@@ -23,7 +23,7 @@ export default function LocationHero({ location }) {
         <div className="relative z-10 flex flex-col items-center px-6">
 
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-6">
-            Lansdale Ceramic Coating Services
+            {location} Ceramic Coating Services
           </h1>
 
           <Link
@@ -41,7 +41,7 @@ export default function LocationHero({ location }) {
         <div className="max-w-4xl w-full space-y-8">
 
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
-            What Makes our Lansdale
+            What Makes our {location}
             <br />
             Ceramic Coating Services Different?
           </h2>
@@ -60,7 +60,7 @@ export default function LocationHero({ location }) {
             </h3>
 
             <p className="text-white max-w-2xl mx-auto mb-8">
-              Whether at your Lansdale home, work, or business we pick up your car
+              Whether at your {location} home, work, or business we pick up your car
               and return it ceramic coated. Our free pickup and delivery service
               completely removes the pain of having to rearrange your life to get
               your car coated. If you are within 50 miles of Harleysville, you’re
@@ -97,8 +97,8 @@ export default function LocationHero({ location }) {
               studio exclusively for your vehicle. While your car is with us, it
               receives our undivided attention, resulting in superior craftsmanship
               and efficient turnaround. The outcome is a vehicle that stands apart
-              on the roads of Lansdale. If you value an exclusive, focused
-              experience, beclean Ceramic Coating Studio of Lansdale is built for you.
+              on the roads of {location}. If you value an exclusive, focused
+              experience, beclean Ceramic Coating Studio of {location} is built for you.
             </p>
 
             {/* ICON */}
@@ -136,7 +136,7 @@ export default function LocationHero({ location }) {
             </h3>
 
             <p className="text-white max-w-2xl mx-auto mb-8">
-              While other ceramic coating installers require multiple days to complete a ceramic coating, beclean ceramic coating studio of Lansdale will get your car returned to you by the end of the day. How we accomplish this is by using the latest in ceramic coating technology, innovative industry techniques, and focusing only on your car. If you desire to have your car on the roads of Lansdale rather than waiting, we are the ones for you. 
+              While other ceramic coating installers require multiple days to complete a ceramic coating, beclean ceramic coating studio of {location} will get your car returned to you by the end of the day. How we accomplish this is by using the latest in ceramic coating technology, innovative industry techniques, and focusing only on your car. If you desire to have your car on the roads of {location} rather than waiting, we are the ones for you. 
             </p>
 
             {/* OPTIONAL IMAGE */}
