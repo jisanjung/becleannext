@@ -75,7 +75,7 @@ export default function Deliverables() {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 overflow-y-auto"
           onClick={(e) => e.target === e.currentTarget && setActiveItem(null)}
         >
-          <div className="relative w-full max-w-lg rounded-2xl bg-[#1f1f1f] p-6 text-white">
+          <div className="relative w-full max-w-lg rounded-2xl bg-[#1f1f1f] p-4 lg:p-6 text-white max-h-[85vh] overflow-y-auto">
             <button
               onClick={() => setActiveItem(null)}
               className="absolute right-4 top-4 text-gray-400 hover:text-white text-2xl"
@@ -88,10 +88,10 @@ export default function Deliverables() {
   alt={activeItem.title}
   width={600}
   height={360}
-  className="mb-6 rounded-lg object-contain w-full max-h-[260px] lg:max-h-[360px]"
+  className="mb-4 rounded-lg object-contain w-full max-h-[180px] sm:max-h-[220px] lg:max-h-[360px]"
 />
 
-            <h3 className="mb-2 text-2xl font-bold text-white">{activeItem.title}</h3>
+            <h3 className="mb-2 text-xl lg:text-2xl font-bold text-white">{activeItem.title}</h3>
 
             <p>{activeItem.description}</p>
 

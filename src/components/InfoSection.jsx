@@ -13,7 +13,7 @@ const InfoSection = ({ className }) => {
                 Thinking about making a strong impression with your car? Ceramic coatings are the best way to long-lasting paint protection while greatly
                 improving the appearance of your car. Expert polishing revives the paint, removes scratches, and brings an amazing shine. 
                 Necessary paint decontamination lets the coating stick to the paint and allows the coating to last longer. 
-                A two-step ceramic coating application allows for the perfect blend of a long-lasting, smooth, and visually striking car.
+                A professional ceramic coating application allows for the perfect blend of a long-lasting, smooth, and visually striking car.
                 </p>
             </div>
         </div>
@@ -22,7 +22,7 @@ const InfoSection = ({ className }) => {
             <ul className='lg:w-3/4'>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 
-                    8 - Year Ceramic Coating (All Painted Surfaces, Trim, and Rims)
+                     4 Year Ceramic Coating (All Painted Surfaces, Trim, and Rims)
                 </li>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 
@@ -30,7 +30,7 @@ const InfoSection = ({ className }) => {
                 </li>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 
-                    Ceramic Coating Gift Box (Quick Detailer, Premium Microfiber Towel, & Coating Maintenance Guide)
+                    Ceramic Coating Gift Box (Quick Detailer, Premium Microfiber Towel, & Warranty Card)
                 </li>
                 <li className='mb-4 flex items-center'>
                     <div><FaCheck className='text-xl text-green-600 mr-4'/></div> 

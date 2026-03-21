@@ -7,7 +7,7 @@ export const FOOTER_BACKGROUND_COLOR = '#F5F5F7';
 export const FAQ_LIST = [
     {
         question: "What is a ceramic coating?",
-        answer: "Simply put, a ceramic coating is the best way to provide long-lasting paint protection while maximizing the appearance of your car. Unlike traditional waxes, our ceramic coatings last for years and do not need to be regularly applied. This not only saves you the trouble of having to reapply a paint coating, it also saves you money in the long run since you would not need to continually see a professional detailer to reapply the coating."
+        answer: "Simply put, a ceramic coating is the best way to provide long-lasting paint protection while maximizing the appearance of your car. Unlike traditional waxes, our ceramic coatings last for years and do not need to be regularly applied. Ceramic coating provide a protective layer that shields your car's paint from UV damage, dirt, and contaminants. It also enhances the appearance by delivering a glossy finish, making maintenance easier."
       },
       {
         question: "Why do I need a ceramic coating?",
@@ -23,11 +23,11 @@ export const FAQ_LIST = [
       },
       {
         question: "What does beclean do to ensure quality control and is there a warranty?",
-        answer: "We have multiple checks during the process to promote coating adhesion and coating curing. This includes multiple leveling steps to ensure that every inch of your car’s paint is covered. Once the coating is cured, we do a final check before you receive your car back to guarantee proper coating application.\n\nAs for warranties, beclean has a 1 year coating satisfaction guarantee. If you like to learn more about the terms and conditions of this warranty please visit our warranty page."
+        answer: "We have multiple checks during the process to promote coating adhesion and coating curing. This includes multiple leveling steps to ensure that every inch of your car’s paint is covered. Once the coating is cured, we do a final check before you receive your car back to guarantee proper coating application.\n\nAs for warranties, beclean has a warranty for our level 2 and level 3 ceramic coatings. In additon, all ceramic coatings have a 6 month satisfaction guarantee. If you like to learn more about the terms and conditions of this warranty please visit our warranty page."
       },
       {
         question: "How long does it take to ceramic coat a car from start to finish?",
-        answer: "Our process of decontaminating the paint, polishing, ceramic prep, coating process, and coating curing takes approximately 6-7 hours. The reason why a ceramic coating takes so long is because it’s important we meticulously perform each step to ensure the coating properly adheres to your car’s paint. Any shortcut can lead to the coating failing prematurely and poor ceramic performance. However, we will perform to the best of our abilities to get your car back to you before your work day ends."
+        answer: "Our process of decontaminating, polishing, ceramic prep, coating process, and coating curing takes approximately 6-7 hours. The reason why a ceramic coating takes so long is because it’s important we meticulously perform each step to ensure the coating properly adheres to your car’s paint. Any shortcut can lead to the coating failing prematurely and poor ceramic performance. However, we will perform to the best of our abilities to get your car back to you before your work day ends."
       },
       {
         question: "What happens once the car is finished coating?",
@@ -59,7 +59,7 @@ export const FAQ_LIST = [
       },
       {
         question: "Can I reschedule my appointment?",
-        answer: "Of course! If something comes up to where you need to reschedule, simply go back to the appointment confirmation and you can select a time that works best for you."
+        answer: "Absolutely, if something comes up to where you need to reschedule, simply go back to the appointment confirmation and you can select a time that works best for you."
       },
       {
         question: "Why should I use beclean for a ceramic coating?",
@@ -304,7 +304,7 @@ export const HP_FAQ_LIST = [
   },
   {
     question: "What’s included in the ceramic coating gift box?",
-    answer: "Every client receives our signature gift box: the Huntington Beach Concours d'Elegance award-winning microfiber towel, a premium quick detailer, and a tailored maintenance guide. Everything you need to keep your coating flawless."
+    answer: "Every client receives our signature gift box: a plush microfiber towel, a premium quick detailer, and warranty card. Everything you need to keep your coating flawless."
   },
   {
     question: "Do I need to be home for vehicle pickup or delivery?",
@@ -313,5 +313,28 @@ export const HP_FAQ_LIST = [
   {
     question: "How do I use the items in the gift box to maintain my ceramic coating?",
     answer: "The included guide walks you through washing, decontaminating, and how to avoid common mistakes. It's designed so you can maintain that showroom shine with confidence."
+  },
+];
+
+export const SERVICE_FAQ_LIST = [
+  {
+    question: "Can a ceramic coating be removed or reapplied if needed?",
+    answer: "Yes, ceramic coatings can be removed and reapplied, however, the process requires professional expertise to make sure the paint underneath is unaffected.The steps we take to reapply a ceramic coating include: polishing, prepping the surface with detailing, and reapplying the ceramic coating by hand."
+  },
+  {
+    question: "How will a ceramic coating affect the resale value of my vehicle?",
+    answer: "A ceramic coating will greatly increase the resale value, especially with our Level 3 ceramic coating package. Ceramic coatings are known to increase resale value by 5-15%, leading to increases of resale value by thousands of dollars. Ceramic coatings are hydrophobic, scratch resistant, last years, and low - maintenance by nature. As a result, ceramic coatings can increase vehicle resale value."
+  },
+  {
+    question: "Are there any downsides to a ceramic coating?",
+    answer: "A ceramic coating has many benefits, but due to the meticulous nature of the application it can lead to a higher initial investment. In addition, ceramic coatings can still experience scratches so it is important to avoid abrasive environments."
+  },
+  {
+    question: "What are the differences between a ceramic coating and PPF?",
+    answer: "No, as long as we've coordinated access ahead of time. We’ll handle the logistics so your day keeps moving while we do the heavy lifting."
+  },
+  {
+    question: "How do I use the items in the gift box to maintain my ceramic coating?",
+    answer: "Ceramic coatings and PPF are popular methods for protecting your car’s paint, but they do it in different ways. Ceramic coatings are liquid-applied and create a shiny, hydrophobic finish that protects against UV, chemicals, and makes cleaning easier, but offers minimal impact protection compared to PPF. PPF is a thick plastic film which provides impact protection, superior scratch resistance, and self-healing capabilities. However, PPF fall short to ceramic coatings in terms of aesthetics due to the nature of the film."
   },
 ];

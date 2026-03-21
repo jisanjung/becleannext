@@ -18,11 +18,15 @@ import Lineup from '@/components/Lineup';
 const Service = () => {
   return (
     <main className='service-page relative'>
-        <AlertBanner 
-            background='#3C3B3B'
-            color='#fff'
+        <AlertBanner background="#C5B270" color="#ffffff">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdd8xeXyN501FlSOvWhe-c7mibQPedlGWLX9U5ljGmf7PCYzQ/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
         >
-            Now through Jan 1st 2026, BONUS Winter Window Coating For All Ceramic Coatings
+          Get a FREE Custom Car Cleaning Plan
+        </a>
         </AlertBanner>
         <Hero/>
         <IncludedServices/>

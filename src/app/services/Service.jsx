@@ -7,28 +7,34 @@ import OurServices from './OurServices';
 import CCLM from './CCLM';
 import Slideshow from './Slideshow';
 import Testimonials from '@/components/Testimonials';
-import FaqSection from '@/components/FaqSection';
+import FAQ from './FAQ';
 import OurWork from '@/components/OurWork';
 import Lineup from '@/components/Lineup';
 import CCProcess from './CCProcess';
+import Advantages from './Advantages';
 
 const Service = () => {
   return (
     <main className='service-page relative'>
-        <AlertBanner 
-            background='#3C3B3B'
-            color='#fff'
+        <AlertBanner background="#3C3B3B" color="#ffffff">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdd8xeXyN501FlSOvWhe-c7mibQPedlGWLX9U5ljGmf7PCYzQ/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
         >
-            Now through Jan 1st 2026, BONUS Winter Window Coating For All Ceramic Coatings
+          Get a FREE Custom Car Cleaning Plan
+        </a>
         </AlertBanner>
         <OurServices/>
         <CCLM/>
         <Slideshow/>
         <CCProcess/>
+        <Lineup/>
         <Testimonials/>
         <OurWork/>
-        <Lineup/>
-        <FaqSection className='px-4 md:px-10 wrapper lg:my-10'/>
+        <Advantages/>
+        <FAQ/>
     </main>
   )
 }
