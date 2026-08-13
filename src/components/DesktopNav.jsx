@@ -41,6 +41,14 @@ const DesktopNav = ({ className }) => {
         </li>
 
         <li className="pr-4 hover:font-bold">
+        <Link href="/our-work">Our Work</Link>
+        </li>
+
+        <li className="pr-4 hover:font-bold">
+        <Link href="/reviews">Reviews</Link>
+        </li>
+
+        <li className="pr-4 hover:font-bold">
           <Link href="/#contactSection">Contact</Link>
         </li>
         <li className="pr-4 hover:font-bold">
