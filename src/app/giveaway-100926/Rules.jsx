@@ -54,7 +54,7 @@ export default function Rules() {
               </p>
               <ul className="list-disc pl-6 mt-2">
                 <li>Entrant must provide a valid email address and phone number</li>
-                <li>Passenger vehicle or light truck, model year 2015 or newer</li>
+                <li>Passenger vehicle or light truck, model year 2020 or newer</li>
                 <li>Factory (original manufacturer) paint in serviceable condition</li>
                 <li>No major rust, peeling clear coat, or unrepaired collision damage</li>
                 <li>Vehicle physically located within ten (10) miles of Harleysville, Pennsylvania at the time of service</li>
@@ -67,7 +67,7 @@ export default function Rules() {
             <div>
               <strong>3. Sweepstakes Period</strong>
               <p className="mt-2">
-                The Sweepstakes begins on July 3, 2026 at 12:00:00 a.m. Eastern Time (&ldquo;ET&rdquo;) and ends on July 10, 2026 at 11:59:59 p.m. ET (the &ldquo;Sweepstakes Period&rdquo;). Entries received before or after the Sweepstakes Period will not be eligible. Sponsor&rsquo;s computer is the official timekeeper for all matters related to this Sweepstakes.
+                The Sweepstakes begins on October 2, 2026 at 12:00:00 a.m. Eastern Time (&ldquo;ET&rdquo;) and ends on October 9, 2026 at 11:59:59 p.m. ET (the &ldquo;Sweepstakes Period&rdquo;). Entries received before or after the Sweepstakes Period will not be eligible. Sponsor&rsquo;s computer is the official timekeeper for all matters related to this Sweepstakes.
               </p>
             </div>
 
@@ -101,13 +101,6 @@ export default function Rules() {
                 </p>
               </div>
 
-              <div className="mt-3 border border-black/10 rounded-md p-4">
-                <p className="font-semibold">Alternate Prize (if applicable) — ARV $500</p>
-                <p className="mt-1">
-                  If winner&rsquo;s vehicle fails to meet eligibility requirements and no other eligible vehicle owned by the winner is available, Sponsor may, in its sole discretion, award a $500.00 service credit toward an eligible ceramic coating service performed by Sponsor. Service must be scheduled within 180 days of winner notification and cannot be combined with other offers.
-                </p>
-              </div>
-
               <p className="mt-3">
                 Total ARV of all available prizes: approximately $3,000.00. Prizes are awarded &ldquo;as is.&rdquo; Sponsor makes no warranty, representation, or guarantee, express or implied, in fact or in law, relative to any prize, including without limitation, quality, merchantability, or fitness for a particular purpose. All prize details are at Sponsor&rsquo;s sole discretion.
               </p>
@@ -123,10 +116,13 @@ export default function Rules() {
             <div>
               <strong>7. Winner Selection and Notification</strong>
               <p className="mt-2">
-                On or about July 11, 2026 at 01:00:00 p.m. ET, Sponsor will conduct a random drawing from all eligible entries received during the Sweepstakes Period to select one (1) potential Grand Prize winner. The drawing will be conducted by Sponsor or its designated representative.
+                On or about October 10, 2026 at 01:00:00 p.m. ET, Sponsor will conduct a random drawing from all eligible entries received during the Sweepstakes Period to select one (1) potential Grand Prize winner. The drawing will be conducted by Sponsor or its designated representative.
               </p>
               <p className="mt-2">
-                The potential winner will be notified by phone, email, and/or text message using the contact information provided at the time of entry. Sponsor&rsquo;s attempts to notify the potential winner are not a guarantee of prize delivery. If a potential winner cannot be contacted within three (3) contact attempts over five (5) business days, fails to respond within forty-eight (48) hours of the first notification attempt, is found ineligible, or fails to comply with these Official Rules, the prize will be forfeited and an alternate potential winner selected in a second random drawing. The following conditions shall also constitute forfeiture: failure to provide a completed IRS Form W-9 prior to the service date; presentation of a vehicle that does not meet the eligibility conditions set forth in Rule 2B upon inspection; or any declaration in the Affidavit of Eligibility being found false or misleading. Sponsor reserves the right to conduct up to three (3) alternate winner drawings.
+                The potential winner will be notified by phone, email, and/or text message using the contact information provided at the time of entry. Sponsor&rsquo;s attempts to notify the potential winner are not a guarantee of prize delivery. If a potential winner cannot be contacted within three (3) contact attempts over five (5) business days, fails to respond within forty-eight (48) hours of the first notification attempt, is found ineligible, or fails to comply with these Official Rules, the prize will be forfeited and an alternate potential winner selected in a second random drawing. The following conditions shall also constitute forfeiture: failure to provide a completed IRS Form W-9 prior to the service date; presentation of a vehicle that does not meet the eligibility conditions set forth in Rule 2B upon inspection; or any declaration in the Affidavit of Eligibility being found false or misleading. Sponsor reserves the right to conduct up to one (1) alternate winner drawing.
+              </p>
+              <p className="mt-2">
+                If a potential winner voluntarily declines or forfeits the prize after being selected, no alternate winner will be selected, and Sponsor will have no further obligation to award the prize.
               </p>
               <p className="mt-2">The drawing will be conducted using a random number generator, witnessed by a neutral third party, and documented in accordance with Sponsor's internal drawing procedures.</p>
             </div>
@@ -137,14 +133,10 @@ export default function Rules() {
                 The potential winner is subject to verification of eligibility, including identity and vehicle condition, in the sole discretion of Sponsor, before the prize is awarded. The potential winner is required to submit a valid government-issued identification and any additional documentation reasonably required by Sponsor, in accordance with IRS Form W-9.
               </p>
               <p className="mt-2">
-                Prior to scheduling service, Sponsor may require the potential winner to submit current photographs of the vehicle and/or submit the vehicle for an in-person inspection at a location designated by Sponsor. If the vehicle does not meet the eligibility requirements set forth in Rule 2B, Sponsor may, in its sole discretion:
+                Prior to scheduling service, Sponsor may require the potential winner to submit current photographs of the vehicle and/or submit the vehicle for an in-person inspection at a location designated by Sponsor. If the vehicle does not meet the eligibility requirements set forth in Rule 2B, the potential winner will be deemed ineligible to receive the Grand Prize, and the prize will be forfeited. Sponsor will then select one (1) alternate potential winner by random drawing in accordance with Rule 7.
               </p>
-              <ul className="list-disc pl-6 mt-2">
-                <li>Award the Alternate Prize (see Rule 5); and/or</li>
-                <li>Allow the Grand Prize service to be applied to a different eligible vehicle owned by the winner, subject to Sponsor&rsquo;s approval</li>
-              </ul>
               <p className="mt-2">
-                Failure to cooperate with any verification request within the time period specified by Sponsor will be deemed a forfeiture of the prize.
+                Failure to cooperate with any verification request within the time period specified by Sponsor, including failure to provide required documentation or failure to present the vehicle for inspection when requested, will be deemed a forfeiture of the prize and will result in selection of one (1) alternate potential winner in accordance with Rule 7.
               </p>
             </div>
 
@@ -194,7 +186,7 @@ export default function Rules() {
             <div>
               <strong>14. Winners List / Rules Request</strong>
               <p className="mt-2">
-                To obtain a copy of these Official Rules or the name of the prize winner (available after July 13, 2026 at 7:00 p.m. ET), send a self-addressed, stamped envelope to:
+                To obtain a copy of these Official Rules or the name of the prize winner (available after October 13, 2026 at 7:00 p.m. ET), send a self-addressed, stamped envelope to:
               </p>
               <p className="mt-2">
                 BeClean Solutions LLC — Sweepstakes Rules/Winner Request<br />
@@ -202,7 +194,7 @@ export default function Rules() {
                 Harleysville, PA 19438
               </p>
               <p className="mt-2">
-                Requests must be received within thirty (30) days after the end of the Sweepstakes Period. The winner&rsquo;s list and Official Rules are also available at becleandetailing.com/giveaway-071026.
+                Requests must be received within thirty (30) days after the end of the Sweepstakes Period. The winner&rsquo;s list and Official Rules are also available at becleandetailing.com/giveaway-100926.
               </p>
             </div>
 
