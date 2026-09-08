@@ -145,18 +145,18 @@ const gallery = [
     id: "volvo-xc90",
     name: "Volvo XC90",
     images: [
-      "/gallery/volvo-xc90.JPG",
-      "/gallery/volvo-xc90-2.JPG",
+      "/gallery/volvo-xc90.jpg",
+      "/gallery/volvo-xc90-2.jpg",
     ],
   },
   {
     id: "lexus-nx350",
     name: "Lexus NX 350",
     images: [
-      "/gallery/lexus-nx350.JPG",
-      "/gallery/lexus-nx350-2.JPG",
-      "/gallery/lexus-nx350-3.JPG",
-      "/gallery/lexus-nx350-4.JPG",
+      "/gallery/lexus-nx350.jpg",
+      "/gallery/lexus-nx350-2.jpg",
+      "/gallery/lexus-nx350-3.jpg",
+      "/gallery/lexus-nx350-4.jpg",
     ],
   },
   {
