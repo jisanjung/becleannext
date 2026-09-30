@@ -79,7 +79,7 @@ export default function Rules() {
               </p>
               <p className="mt-3 font-semibold">B. Alternate Method of Entry (&ldquo;AMOE&rdquo;) — No Purchase Necessary</p>
               <p className="mt-1">
-                To enter without any purchase or payment, visit becleandetailing.com/giveaway during the Sweepstakes Period and complete the online entry form with all required information. Submission constitutes one (1) entry.
+                To enter without any purchase or payment, visit becleandetailing.com/giveaway-100926 during the Sweepstakes Period and complete the online entry form with all required information. Submission constitutes one (1) entry.
               </p>
               <p className="mt-3 font-semibold">C. General Entry Conditions</p>
               <ul className="list-disc pl-6 mt-2">
