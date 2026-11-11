@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { GTM_ID } from "@/constants";
 import { GoogleTagManager } from '@next/third-parties/google'
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata = {
   verification: {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.variable} ${inter.className} antialiased`}
       >
         <Header/>
         {children}
