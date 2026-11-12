@@ -1,64 +1,110 @@
 'use client';
 
-import { FOOTER_BACKGROUND_COLOR } from '../constants'
-import LinkButton from './LinkButton'
-import { FaLinkedinIn } from "react-icons/fa";
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { TfiFacebook } from "react-icons/tfi";
-import { FaInstagram } from "react-icons/fa";
-import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { SERVICE_LINKS } from './navLinks';
+
+const PATHNAMES_TO_SHOW_FINEPRINT = ['/8-year-ceramic-coating', '/referral'];
+
+const SOCIALS = [
+  { href: 'https://www.linkedin.com/company/becleancars/', label: 'LinkedIn', Icon: FaLinkedinIn },
+  { href: 'https://www.facebook.com/becleanceramics', label: 'Facebook', Icon: TfiFacebook },
+  { href: 'https://www.instagram.com/becleanceramics/', label: 'Instagram', Icon: FaInstagram },
+];
+
+const COLUMNS = [
+  {
+    title: 'Services',
+    links: [{ href: '/services', label: 'All Services' }, ...SERVICE_LINKS],
+  },
+  {
+    title: 'Company',
+    links: [
+      { href: '/our-work', label: 'Our Work' },
+      { href: '/reviews', label: 'Reviews' },
+      { href: '/#ourStorySection', label: 'Our Story' },
+      { href: '/#contactSection', label: 'Contact' },
+    ],
+  },
+];
+
+const footerLink = 'text-sm text-ink/70 transition hover:text-brand-dark';
 
 const Footer = () => {
-
-    const PATHNAMES_TO_SHOW_FINEPRINT = ['/8-year-ceramic-coating', '/referral'];
-    const [showFinePrint, setShowFinePrint] = useState(false);
-    const pathname = usePathname();
-
-    useEffect(() => {
-        if (PATHNAMES_TO_SHOW_FINEPRINT.includes(pathname)) {
-            setShowFinePrint(true);
-        }
-    }, []);
+  const pathname = usePathname();
+  const showFinePrint = PATHNAMES_TO_SHOW_FINEPRINT.includes(pathname);
 
   return (
-    <footer className='flex flex-col lg:flex-row justify-center lg:block px-4 py-6 md:px-10' style={{
-        background: FOOTER_BACKGROUND_COLOR,
-        color: '#000',
-    }}>
-        <div className='lg:flex lg:items-center lg:justify-between wrapper'>
-            <div>
-                <p className='font-bold hidden lg:block lg:mb-2'>Copyright &copy; <span>{new Date().getFullYear()}</span> beclean </p>
-                <div className='flex justify-center flex-wrap lg:justify-start mb-6 lg:mb-0'>
-                    <LinkButton href="/services" className='pr-8 lg:pr-4 p-1'>Services</LinkButton>
-                    <LinkButton href="/#contactSection" className='pr-8 lg:pr-4 p-1'>Contact Us</LinkButton>
-                    <LinkButton href="/cookie-policy" className='pr-8 lg:pr-4 p-1'>Cookies</LinkButton>
-                    <LinkButton href="/privacy-policy" className='pr-8 lg:pr-4 p-1'>Privacy Policy</LinkButton>
-                </div>
+    <footer className='bg-mist text-ink'>
+      <div className='container-x py-16'>
+        <div className='grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]'>
+          {/* Brand */}
+          <div>
+            <Link href='/' className='inline-flex items-center gap-2'>
+              <Image src='/logo_wreath.png' alt='' width={40} height={40} className='h-10 w-10' />
+              <span className='text-lg font-bold tracking-tight'>beclean</span>
+            </Link>
+            <p className='mt-4 max-w-xs text-sm leading-relaxed text-ink/70'>
+              The detailing studio devoted solely to ceramic coatings.
+            </p>
+            <div className='mt-6 flex gap-2'>
+              {SOCIALS.map(({ href, label, Icon }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label={label}
+                  className='flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink ring-1 ring-black/5 transition hover:bg-brand hover:text-white'
+                >
+                  <Icon className='text-base' />
+                </a>
+              ))}
             </div>
-            <div>
-                <div className='flex justify-center lg:justify-end items-end mb-6'>
-                    <a href='https://www.linkedin.com/company/becleancars/' target="_blank" rel="noopener noreferrer">
-                        <FaLinkedinIn className='text-3xl mr-4'/>
-                    </a>
-                    <a href='https://www.facebook.com/becleanceramics' target="_blank" rel="noopener noreferrer">
-                        <TfiFacebook className='text-3xl mr-4'/>
-                    </a>
-                    <a href='https://www.instagram.com/becleanceramics/' target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className='text-3xl mr-4 lg:mr-0'/>
-                    </a>
-                </div>
-                <div className='flex flex-col items-center lg:items-end mb-6 lg:mb-0'>
-                    <p>becleancars@gmail.com</p>
-                    <LinkButton href='tel:+12674096913'>(267) 409-6913</LinkButton>
-                </div>
+          </div>
+
+          {/* Link columns */}
+          {COLUMNS.map((col) => (
+            <div key={col.title}>
+              <h3 className='text-xs font-semibold uppercase tracking-[0.2em] text-ink/50'>{col.title}</h3>
+              <ul className='mt-4 space-y-3'>
+                {col.links.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className={footerLink}>{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className='font-bold lg:hidden text-center'>Copyright &copy; <span>{new Date().getFullYear()}</span> beclean </p>
+          ))}
+
+          {/* Contact */}
+          <div>
+            <h3 className='text-xs font-semibold uppercase tracking-[0.2em] text-ink/50'>Get in touch</h3>
+            <ul className='mt-4 space-y-3'>
+              <li><a href='mailto:becleancars@gmail.com' className={footerLink}>becleancars@gmail.com</a></li>
+              <li><a href='tel:+12674096913' className={footerLink}>(267) 409-6913</a></li>
+            </ul>
+            <Link href='/book' className='btn mt-6'>Book an Appointment</Link>
+          </div>
         </div>
+
+        <div className='mt-14 flex flex-col gap-4 border-t border-black/10 pt-8 text-sm text-ink/60 md:flex-row md:items-center md:justify-between'>
+          <p>&copy; {new Date().getFullYear()} beclean. All rights reserved.</p>
+          <div className='flex gap-6'>
+            <Link href='/cookie-policy' className='transition hover:text-ink'>Cookies</Link>
+            <Link href='/privacy-policy' className='transition hover:text-ink'>Privacy Policy</Link>
+          </div>
+        </div>
+
         {showFinePrint && (
-            <div className='wrapper pt-10'>
-                <small> * Durability ratings are based on an average life expectancy. Coatings can last longer or shorter depending on the life a car is subjected to. The harsher the life, the shorter a coating will last.</small>
-            </div>
+          <p className='mt-8 text-xs leading-relaxed text-ink/50'>
+            * Durability ratings are based on an average life expectancy. Coatings can last longer or shorter depending on the life a car is subjected to. The harsher the life, the shorter a coating will last.
+          </p>
         )}
+      </div>
     </footer>
   )
 }
