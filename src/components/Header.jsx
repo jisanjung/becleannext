@@ -17,8 +17,19 @@ const Header = () => {
     if (!isHome) return;
     const onScroll = () => setScrolled(window.scrollY > 40);
     onScroll();
+    // Re-check after the browser restores scroll or jumps to a #hash on load
+    const raf = requestAnimationFrame(onScroll);
+    const timeout = setTimeout(onScroll, 150);
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+    window.addEventListener('hashchange', onScroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      clearTimeout(timeout);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('load', onScroll);
+      window.removeEventListener('hashchange', onScroll);
+    };
   }, [isHome]);
 
   // Close the mobile menu whenever the route changes
@@ -30,10 +41,10 @@ const Header = () => {
 
   return (
     <header
-      className={`${isHome ? 'fixed' : 'relative'} inset-x-0 top-0 z-40 text-white transition-colors duration-300 ${
+      className={`${isHome ? 'fixed' : 'relative'} inset-x-0 top-0 z-40 border-b text-white transition-[background-color,box-shadow,border-color] duration-300 ${
         transparent
-          ? 'bg-transparent'
-          : 'bg-ink/95 backdrop-blur-md shadow-[0_1px_0_rgba(255,255,255,0.06)]'
+          ? 'border-transparent bg-transparent'
+          : 'border-white/10 bg-ink shadow-lg shadow-black/25'
       }`}
     >
       <div className='container-x flex h-[72px] items-center justify-between gap-6'>

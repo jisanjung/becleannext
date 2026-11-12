@@ -1,29 +1,72 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import Slider from './Slider'
 
 const reviews = [
-  '/referral/review1.png',
-  '/referral/review2.png',
-  '/referral/review3.png',
-  '/referral/review4.png',
-  '/referral/review5.PNG',
-  '/referral/review6.PNG',
-  '/referral/review7.PNG',
+  { src: '/referral/review1.png', w: 1179, h: 916 },
+  { src: '/referral/review5.PNG', w: 1179, h: 1097 },
+  { src: '/referral/review2.png', w: 1179, h: 709 },
+  { src: '/referral/review6.PNG', w: 1179, h: 833 },
+  { src: '/referral/review3.png', w: 1179, h: 782 },
+  { src: '/referral/review7.PNG', w: 1179, h: 586 },
+  { src: '/referral/review4.png', w: 1179, h: 703 },
 ]
+
+const Stars = ({ className = '' }) => (
+  <span className={`text-[#FDCF0A] tracking-[0.15em] ${className}`} aria-hidden>★★★★★</span>
+)
+
+function ReviewCard({ src, w, h, index }) {
+  return (
+    <figure className='overflow-hidden rounded-2xl bg-white p-3 shadow-lg shadow-black/20 ring-1 ring-white/10 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30'>
+      <Image
+        src={src}
+        alt={`Google review ${index + 1}`}
+        width={w}
+        height={h}
+        sizes='(min-width: 1024px) 360px, 80vw'
+        className='h-auto w-full'
+      />
+    </figure>
+  )
+}
 
 export default function HomeTestimonials() {
   return (
-    <section id='testimonialsSection' className='section bg-ink text-white'>
+    <section id='testimonialsSection' className='section overflow-hidden bg-ink text-white'>
       <div className='container-x'>
-        <div className='mx-auto mb-12 max-w-2xl text-center'>
-          <div className='mb-4 flex justify-center gap-1 text-2xl text-[#FDCF0A]' aria-label='5 out of 5 stars'>
-            {[...Array(5)].map((_, i) => <span key={i} aria-hidden>★</span>)}
+        <div className='mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between'>
+          <div>
+            <span className='eyebrow'>Testimonials</span>
+            <h2 className='heading mt-3'>What Our Clients Say</h2>
           </div>
-          <h2 className='heading'>What Our Clients Say</h2>
-          <Link href='/reviews' className='link-arrow mt-5'>Read more reviews →</Link>
+          <div className='flex items-center gap-4'>
+            <div className='rounded-2xl bg-white/5 px-5 py-3 ring-1 ring-white/10'>
+              <Stars className='text-xl' />
+              <p className='mt-1 text-sm text-white/70'>5-star reviews on Google</p>
+            </div>
+            <Link href='/reviews' className='link-arrow'>Read more →</Link>
+          </div>
         </div>
-        <div className='mx-auto max-w-4xl'>
-          <Slider images={reviews} altPrefix='Google review' dark fit='object-contain p-4 md:p-8' />
+
+        {/* Mobile / tablet: swipeable row */}
+        <div
+          className='-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 md:-mx-10 md:px-10 lg:hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
+          aria-label='Client reviews'
+        >
+          {reviews.map((r, i) => (
+            <div key={r.src} className='w-[80%] max-w-sm shrink-0 snap-center self-start'>
+              <ReviewCard {...r} index={i} />
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop: staggered grid */}
+        <div className='hidden columns-3 gap-6 lg:block'>
+          {reviews.map((r, i) => (
+            <div key={r.src} className='mb-6 break-inside-avoid'>
+              <ReviewCard {...r} index={i} />
+            </div>
+          ))}
         </div>
       </div>
     </section>
