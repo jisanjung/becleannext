@@ -38,7 +38,7 @@ function FaqItem({ question, answer, open, onToggle }) {
   );
 }
 
-const FAQ = () => {
+const FAQ = ({ items = HP_FAQ_LIST, contactHref = '#contactSection' }) => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -49,11 +49,11 @@ const FAQ = () => {
           <h2 className='heading mt-3'>Frequently Asked Questions</h2>
           <p className='mt-5 text-ink/70'>
             Can’t find what you’re looking for?{' '}
-            <a href='#contactSection' className='font-semibold text-brand hover:text-brand-dark'>Send us a message.</a>
+            <a href={contactHref} className='font-semibold text-brand hover:text-brand-dark'>Send us a message.</a>
           </p>
         </div>
         <div className='border-t border-black/10'>
-          {HP_FAQ_LIST?.map((item, i) => (
+          {items?.map((item, i) => (
             <FaqItem
               key={item.question}
               question={item.question}
