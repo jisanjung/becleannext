@@ -319,7 +319,7 @@ export const HP_FAQ_LIST = [
 export const SERVICE_FAQ_LIST = [
   {
     question: "Can a ceramic coating be removed or reapplied if needed?",
-    answer: "Yes, ceramic coatings can be removed and reapplied, however, the process requires professional expertise to make sure the paint underneath is unaffected.The steps we take to reapply a ceramic coating include: polishing, prepping the surface with detailing, and reapplying the ceramic coating by hand."
+    answer: "Yes, ceramic coatings can be removed and reapplied, however, the process requires professional expertise to make sure the paint underneath is unaffected. The steps we take to reapply a ceramic coating include: polishing, prepping the surface with detailing, and reapplying the ceramic coating by hand."
   },
   {
     question: "How will a ceramic coating affect the resale value of my vehicle?",
@@ -331,10 +331,10 @@ export const SERVICE_FAQ_LIST = [
   },
   {
     question: "What are the differences between a ceramic coating and PPF?",
-    answer: "No, as long as we've coordinated access ahead of time. We’ll handle the logistics so your day keeps moving while we do the heavy lifting."
+    answer: "Ceramic coatings and PPF are popular methods for protecting your car’s paint, but they do it in different ways. Ceramic coatings are liquid-applied and create a shiny, hydrophobic finish that protects against UV, chemicals, and makes cleaning easier, but offers minimal impact protection compared to PPF. PPF is a thick plastic film which provides impact protection, superior scratch resistance, and self-healing capabilities. However, PPF fall short to ceramic coatings in terms of aesthetics due to the nature of the film."
   },
   {
     question: "How do I use the items in the gift box to maintain my ceramic coating?",
-    answer: "Ceramic coatings and PPF are popular methods for protecting your car’s paint, but they do it in different ways. Ceramic coatings are liquid-applied and create a shiny, hydrophobic finish that protects against UV, chemicals, and makes cleaning easier, but offers minimal impact protection compared to PPF. PPF is a thick plastic film which provides impact protection, superior scratch resistance, and self-healing capabilities. However, PPF fall short to ceramic coatings in terms of aesthetics due to the nature of the film."
+    answer: "The included guide walks you through washing, decontaminating, and how to avoid common mistakes. It's designed so you can maintain that showroom shine with confidence."
   },
 ];

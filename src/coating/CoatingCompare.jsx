@@ -3,7 +3,12 @@ import Link from 'next/link'
 import { FaCheck, FaMinus } from 'react-icons/fa6'
 import { CLEANING_FORM_URL, COATING_FORM_URL, FEATURES, TIERS, formatPrice } from './tiers'
 
-function TierCard({ tier, current }) {
+const outlineBtn =
+  'inline-flex w-full items-center justify-center rounded-full border border-ink/20 px-7 py-3.5 text-sm font-semibold text-ink transition hover:bg-ink hover:text-white'
+
+// `current`: this card is the level the visitor is viewing.
+// `overview`: no level is being viewed (e.g. the services page), so every card offers both actions.
+function TierCard({ tier, current, overview }) {
   return (
     <article
       className={`relative flex h-full flex-col rounded-3xl p-6 md:p-8 ${
@@ -52,11 +57,13 @@ function TierCard({ tier, current }) {
       <div className='mt-auto pt-8'>
         {current ? (
           <Link href='/book' className='btn w-full'>Book Level {tier.level}</Link>
+        ) : overview ? (
+          <div className='flex flex-col gap-3'>
+            <Link href={`/${tier.slug}`} className='btn w-full'>Learn More</Link>
+            <Link href='/book' className={outlineBtn}>Book Now</Link>
+          </div>
         ) : (
-          <Link
-            href={`/${tier.slug}`}
-            className='inline-flex w-full items-center justify-center rounded-full border border-ink/20 px-7 py-3.5 text-sm font-semibold text-ink transition hover:bg-ink hover:text-white'
-          >
+          <Link href={`/${tier.slug}`} className={outlineBtn}>
             View Level {tier.level} →
           </Link>
         )}
@@ -65,15 +72,20 @@ function TierCard({ tier, current }) {
   )
 }
 
-export default function CoatingCompare({ tier }) {
+export default function CoatingCompare({
+  tier,
+  eyebrow = 'Compare Levels',
+  heading = 'Explore the lineup.',
+  headingAs: Heading = 'h2',
+}) {
   const tiers = Object.values(TIERS)
 
   return (
     <section id='compare' className='section bg-white'>
       <div className='container-x'>
         <div className='mx-auto max-w-2xl text-center'>
-          <span className='eyebrow'>Compare Levels</span>
-          <h2 className='heading mt-3'>Explore the lineup.</h2>
+          <span className='eyebrow'>{eyebrow}</span>
+          <Heading className='heading mt-3'>{heading}</Heading>
           <p className='mt-5 text-lg leading-relaxed text-ink/70'>
             Every level includes paint correction, same-day turnaround, and free pickup &amp; delivery.
             Higher levels add durability, a longer warranty, and glass coating.
@@ -83,7 +95,7 @@ export default function CoatingCompare({ tier }) {
         <div className='-mx-4 mt-12 flex pt-3 snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 md:-mx-10 md:px-10 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'>
           {tiers.map((t) => (
             <div key={t.level} className='w-[85%] max-w-sm shrink-0 snap-center lg:w-auto lg:max-w-none'>
-              <TierCard tier={t} current={t.level === tier.level} />
+              <TierCard tier={t} current={t.level === tier?.level} overview={!tier} />
             </div>
           ))}
         </div>

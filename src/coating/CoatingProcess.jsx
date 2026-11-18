@@ -18,7 +18,7 @@ function StepImage({ step, sizes, priority = false }) {
   )
 }
 
-export default function CoatingProcess({ tier }) {
+export default function CoatingProcess({ intro }) {
   const [active, setActive] = useState(0)
   const baseId = useId()
   const current = PROCESS_STEPS[active]
@@ -29,7 +29,7 @@ export default function CoatingProcess({ tier }) {
         <div className='max-w-2xl'>
           <span className='eyebrow'>How It Works</span>
           <h2 className='heading mt-3'>Our Ceramic Coating Process</h2>
-          <p className='mt-5 text-lg leading-relaxed text-white/70'>{tier.processIntro}</p>
+          <p className='mt-5 text-lg leading-relaxed text-white/70'>{intro}</p>
         </div>
 
         <div className='mt-12 grid gap-10 lg:grid-cols-2 lg:gap-16'>

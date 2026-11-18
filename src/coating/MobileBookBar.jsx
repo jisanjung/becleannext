@@ -2,14 +2,16 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { formatPrice } from './tiers'
 
-/** Small booking bar pinned to the bottom on phones once the hero has scrolled away. */
-export default function MobileBookBar({ tier }) {
+/**
+ * Small booking bar pinned to the bottom on phones once the element with id `startAfter`
+ * (the hero by default) has scrolled away, hidden again while the closing book CTA is on screen.
+ */
+export default function MobileBookBar({ title, subtitle, startAfter = 'top' }) {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const hero = document.getElementById('top')
+    const hero = document.getElementById(startAfter)
     const finalCta = document.getElementById('book-cta')
     if (!hero) return
 
@@ -27,7 +29,7 @@ export default function MobileBookBar({ tier }) {
     observer.observe(hero)
     if (finalCta) observer.observe(finalCta)
     return () => observer.disconnect()
-  }, [])
+  }, [startAfter])
 
   return (
     <div
@@ -38,8 +40,8 @@ export default function MobileBookBar({ tier }) {
     >
       <div className='flex items-center justify-between gap-4'>
         <div className='min-w-0'>
-          <p className='truncate text-sm font-semibold text-ink'>{tier.name}</p>
-          <p className='text-xs text-ink/60'>From {formatPrice(tier.price)} · {tier.years} year protection</p>
+          <p className='truncate text-sm font-semibold text-ink'>{title}</p>
+          {subtitle && <p className='text-xs text-ink/60'>{subtitle}</p>}
         </div>
         <Link href='/book' tabIndex={visible ? 0 : -1} className='btn shrink-0 !px-5 !py-2.5'>
           Book Now

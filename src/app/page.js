@@ -1,4 +1,4 @@
-import Hero from "@/landing/Hero";
+import Hero from "@/landing/HomeHero";
 import AboutSection from "@/landing/AboutSection";
 import Services from "@/landing/Services";
 import HomeOurWork from "@/landing/HomeOurWork";
