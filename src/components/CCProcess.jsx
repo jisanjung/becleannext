@@ -28,14 +28,14 @@ const steps = [
     title: "Polishing",
     description:
       "Once the paint is clear from surface decontamination, our technicians at the studio begin the polishing step. The polishing step is a critical step in the ceramic coating process to create a surgically clean surface, achieving higher shine, and removing any present surface imperfections. This important step achieves the most beautiful paint possible and ensures the coating lasts as long as possible.",
-    image: "/services/car_polishing.jpg",
+    image: "/services/polishing.JPG",
   },
   {
     id: 3,
     title: "Ceramic Coating Prep",
     description:
       "After the polishing process, we do an additional polish with our adhesion promoter polish. The adhesion promoting polish not only increases shine and smoothness, but achieves maximum durability.",
-    image: "/process/application.jpg",
+    image: "/services/app.JPG",
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ export default function CCProcess() {
 
       {/* Intro Text */}
       <p className="mx-auto mb-10 max-w-md text-center text-white text-sm sm:text-base lg:max-w-3xl lg:text-xl px-6 sm:px-">
-        At beclean Ceramic Coating Studio, our 4 year ceramic coating is designed for
+        At beclean Ceramic Coating Studio, our 9 year ceramic coating is designed for
         owners who want extended ceramic protection. The service is structured for
         durability, gloss, and surface performance over years of real-world driving.
         Because lasting protection is measured not just by the coating applied, but
@@ -95,7 +95,7 @@ export default function CCProcess() {
                 onClick={() =>
                   setActiveStep(step.id)
                 }
-                className={`w-full flex justify-between items-start font-semibold
+                className={`cursor-pointer w-full flex justify-between items-start font-semibold
                   ${
                     activeStep === step.id
                       ? "bg-gray-200 rounded-xl px-5 py-3 text-sm"
@@ -116,9 +116,18 @@ export default function CCProcess() {
 
                 {/* "+" Circle for inactive steps */}
                 {activeStep !== step.id && (
-                  <div className="ml-4 flex-shrink-0 h-7 w-7 flex items-center justify-center rounded-full border-2 border-black text-black text-lg font-bold">
-                    +
-                  </div>
+                  <div className="ml-4 flex-shrink-0 h-7 w-7 flex items-center justify-center rounded-full border-2 border-black">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 text-black"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={3}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4"/>
+                  </svg>
+                </div>
                 )}
               </button>
             ))}

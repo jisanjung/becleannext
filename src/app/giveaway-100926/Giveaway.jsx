@@ -4,7 +4,7 @@ import Header from "./Header";
 import Form from "./Form";
 import Deliverables from "./Deliverables";
 import Reviews from "../lp/Reviews";
-import CCProcess from "../level-3-ceramic-coating/CCProcess";
+import CCProcess from "@/components/CCProcess";
 import Included from "../giveaway-071026/Included";
 import Testimonials from "@/components/Testimonials";
 import OurWork from "@/components/OurWork";
