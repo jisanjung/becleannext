@@ -10,8 +10,9 @@ const btn =
 /**
  * Full-screen photo viewer. Escape closes, arrow keys and swipes step through `images`.
  * With `title`, it is shown at the top; with `thumbnails`, a strip of photos sits below.
+ * `label` names the photos for screen readers when there is no title.
  */
-export default function Lightbox({ images, index, onClose, onSelect, title, thumbnails = false }) {
+export default function Lightbox({ images, index, onClose, onSelect, title, label = 'Our work', thumbnails = false }) {
   const closeRef = useRef(null)
   const touchStartX = useRef(null)
   const count = images.length
@@ -39,13 +40,13 @@ export default function Lightbox({ images, index, onClose, onSelect, title, thum
     }
   }, [])
 
-  const label = title ?? 'Our work'
+  const name = title ?? label
 
   return (
     <div
       role='dialog'
       aria-modal='true'
-      aria-label={`${label}, photo ${index + 1} of ${count}`}
+      aria-label={`${name}, photo ${index + 1} of ${count}`}
       className='fixed inset-0 z-50 flex flex-col bg-black/90 p-4 md:p-8'
       onClick={onClose}
       onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX }}
@@ -69,7 +70,7 @@ export default function Lightbox({ images, index, onClose, onSelect, title, thum
           <Image
             key={images[index]}
             src={images[index]}
-            alt={`${label} ${index + 1}`}
+            alt={`${name} ${index + 1}`}
             fill
             sizes='100vw'
             className='object-contain'
