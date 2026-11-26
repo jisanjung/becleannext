@@ -4,7 +4,7 @@
  */
 
 // Shared by every level.
-export const COATING_FORM_URL = 'https://docs.google.com/forms/d/1CMcB841EMiGIzINViwXbMBGX8OhA2f3Nm0kYo3S9rEU/edit';
+export const COATING_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe3tdGtRbq1MwNF6q0xrAn7dmN7rIFJPf1OcjmZwX3IWY3_vA/viewform';
 export const CLEANING_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdd8xeXyN501FlSOvWhe-c7mibQPedlGWLX9U5ljGmf7PCYzQ/viewform';
 
 export const HIGHLIGHTS = [

@@ -9,7 +9,7 @@ const bottleImages = [
   '/level_3_no_background.png',
 ]
 
-const COATING_FORM = 'https://docs.google.com/forms/d/1CMcB841EMiGIzINViwXbMBGX8OhA2f3Nm0kYo3S9rEU/edit'
+const COATING_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSe3tdGtRbq1MwNF6q0xrAn7dmN7rIFJPf1OcjmZwX3IWY3_vA/viewform'
 const CLEANING_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSdd8xeXyN501FlSOvWhe-c7mibQPedlGWLX9U5ljGmf7PCYzQ/viewform?usp=header'
 
 function Card({ title, description, href, dark, visual }) {

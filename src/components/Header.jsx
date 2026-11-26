@@ -62,7 +62,7 @@ const Header = () => {
         <DesktopNav className='hidden lg:block' />
 
         <div className='flex items-center gap-3'>
-          <Link href='/book' className='btn hidden !px-5 !py-2.5 sm:inline-flex'>
+          <Link href='/book' className='btn whitespace-nowrap !px-4 !py-2.5 sm:!px-5'>
             Book Now
           </Link>
           <button

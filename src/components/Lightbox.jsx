@@ -18,8 +18,15 @@ export default function Lightbox({ images, index, onClose, onSelect, title, labe
   const count = images.length
   const multiple = count > 1
 
-  const prev = () => onSelect((index - 1 + count) % count)
-  const next = () => onSelect((index + 1) % count)
+  // Step from a ref, not the `index` prop, so presses that land before the next render still count.
+  const indexRef = useRef(index)
+  indexRef.current = index
+  const go = (i) => {
+    indexRef.current = i
+    onSelect(i)
+  }
+  const prev = () => go((indexRef.current - 1 + count) % count)
+  const next = () => go((indexRef.current + 1) % count)
   // Keep the latest handlers for the key listener without re-subscribing on every step.
   const handlers = useRef({ prev, next, onClose })
   handlers.current = { prev, next, onClose }
@@ -30,6 +37,8 @@ export default function Lightbox({ images, index, onClose, onSelect, title, labe
       if (e.key === 'ArrowLeft') handlers.current.prev()
       if (e.key === 'ArrowRight') handlers.current.next()
     }
+    // Return focus to whatever opened the viewer (the photo or review card) when it closes.
+    const opener = document.activeElement
     const prevOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     window.addEventListener('keydown', onKey)
@@ -37,6 +46,7 @@ export default function Lightbox({ images, index, onClose, onSelect, title, labe
     return () => {
       document.body.style.overflow = prevOverflow
       window.removeEventListener('keydown', onKey)
+      if (opener instanceof HTMLElement && opener.isConnected) opener.focus({ preventScroll: true })
     }
   }, [])
 
