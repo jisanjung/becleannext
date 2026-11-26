@@ -2,8 +2,9 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { IoChevronBack, IoChevronForward, IoClose, IoExpandOutline } from 'react-icons/io5'
+import { useCallback, useState } from 'react'
+import { IoExpandOutline } from 'react-icons/io5'
+import Lightbox from '@/components/Lightbox'
 
 // Order matters: it drives the bento layout below.
 const workImages = [
@@ -16,78 +17,11 @@ const workImages = [
   { src: '/referral/work_example10.JPG', span: 'col-span-2' },
 ]
 
-function Lightbox({ index, onClose, onPrev, onNext }) {
-  const closeRef = useRef(null)
-  const touchStartX = useRef(null)
-
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === 'Escape') onClose()
-      if (e.key === 'ArrowLeft') onPrev()
-      if (e.key === 'ArrowRight') onNext()
-    }
-    const prevOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    window.addEventListener('keydown', onKey)
-    closeRef.current?.focus()
-    return () => {
-      document.body.style.overflow = prevOverflow
-      window.removeEventListener('keydown', onKey)
-    }
-  }, [onClose, onPrev, onNext])
-
-  const btn =
-    'flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl text-white backdrop-blur transition hover:bg-white/20 cursor-pointer'
-
-  return (
-    <div
-      role='dialog'
-      aria-modal='true'
-      aria-label={`Our work photo ${index + 1} of ${workImages.length}`}
-      className='fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 md:p-10'
-      onClick={onClose}
-      onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX }}
-      onTouchEnd={(e) => {
-        if (touchStartX.current === null) return
-        const diff = touchStartX.current - e.changedTouches[0].clientX
-        if (diff > 50) onNext()
-        if (diff < -50) onPrev()
-        touchStartX.current = null
-      }}
-    >
-      <div className='relative h-full w-full max-w-6xl' onClick={(e) => e.stopPropagation()}>
-        <Image
-          src={workImages[index].src}
-          alt={`Our work ${index + 1}`}
-          fill
-          sizes='100vw'
-          className='object-contain'
-        />
-      </div>
-
-      <button ref={closeRef} type='button' onClick={onClose} className={`${btn} absolute right-4 top-4`} aria-label='Close'>
-        <IoClose />
-      </button>
-      <button type='button' onClick={(e) => { e.stopPropagation(); onPrev() }} className={`${btn} absolute left-4 top-1/2 -translate-y-1/2`} aria-label='Previous photo'>
-        <IoChevronBack />
-      </button>
-      <button type='button' onClick={(e) => { e.stopPropagation(); onNext() }} className={`${btn} absolute right-4 top-1/2 -translate-y-1/2`} aria-label='Next photo'>
-        <IoChevronForward />
-      </button>
-      <p className='absolute bottom-5 left-1/2 -translate-x-1/2 text-sm text-white/70'>
-        {index + 1} / {workImages.length}
-      </p>
-    </div>
-  )
-}
+const photos = workImages.map(({ src }) => src)
 
 export default function HomeOurWork() {
   const [openIndex, setOpenIndex] = useState(null)
-  const count = workImages.length
-
   const close = useCallback(() => setOpenIndex(null), [])
-  const prev = useCallback(() => setOpenIndex((i) => (i - 1 + count) % count), [count])
-  const next = useCallback(() => setOpenIndex((i) => (i + 1) % count), [count])
 
   return (
     <section id='ourWorkSection' className='section bg-mist'>
@@ -130,7 +64,7 @@ export default function HomeOurWork() {
       </div>
 
       {openIndex !== null && (
-        <Lightbox index={openIndex} onClose={close} onPrev={prev} onNext={next} />
+        <Lightbox images={photos} index={openIndex} onClose={close} onSelect={setOpenIndex} />
       )}
     </section>
   )
