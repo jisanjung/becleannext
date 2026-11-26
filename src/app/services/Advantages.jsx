@@ -1,49 +1,51 @@
-import Image from "next/image"
+import Image from 'next/image'
+import { FaCheck } from 'react-icons/fa6'
+
+const ADVANTAGES = [
+  'Scratch resistant',
+  'Car looks immaculate',
+  'Easier to clean',
+  'Repels mud, dirt, and pollen',
+  'Car looks newer for longer',
+  'Protects against oxidation',
+  'Long-lasting shine',
+  'Intense water beading and smoothness',
+  'Increases resale value',
+  'Self cleaning',
+]
 
 export default function Advantages() {
   return (
-    <section className="bg-[#FFFFFF] py-20 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-        {/* LEFT CONTENT */}
+    <section className='section bg-white'>
+      <div className='container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-20'>
         <div>
-
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
-            What are the Advantages of Ceramic Coating?
-          </h2>
-
-          <p className="text-black mb-6">
-            Thinking about transforming your car with a ceramic coating?
-            The advantages of a professional ceramic coating service include:
+          <span className='eyebrow'>The Benefits</span>
+          <h2 className='heading mt-3'>What are the advantages of ceramic coating?</h2>
+          <p className='mt-6 text-lg leading-relaxed text-ink/70'>
+            Thinking about transforming your car with a ceramic coating? A professional ceramic coating service gives
+            you:
           </p>
-
-          <ul className="list-disc pl-6 space-y-2 text-black">
-
-            <li>Scratch resistant</li>
-            <li>Car looks immaculate</li>
-            <li>Easier to clean</li>
-            <li>Repels mud, dirt, and pollen</li>
-            <li>Car looks newer for longer</li>
-            <li>Protects against oxidation</li>
-            <li>Long lasting shine</li>
-            <li>Intense water-beading and smoothness</li>
-            <li>Increases resale value</li>
-            <li>Self cleaning</li>
-
+          <ul className='mt-8 grid gap-x-8 gap-y-3 sm:grid-cols-2'>
+            {ADVANTAGES.map((item) => (
+              <li key={item} className='flex items-start gap-3 text-ink'>
+                <span className='mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand'>
+                  <FaCheck aria-hidden className='text-[10px]' />
+                </span>
+                {item}
+              </li>
+            ))}
           </ul>
-
         </div>
 
-        {/* IMAGE */}
-        <div className="relative w-full h-[240px] md:h-[380px] rounded-2xl overflow-hidden">
-        <Image
-            src="/referral/work_example9.JPG"
-            alt="Ceramic coated car in the beclean studio"
+        <div className='relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-mist'>
+          <Image
+            src='/referral/work_example9.JPG'
+            alt='Ceramic coated car in the beclean studio'
             fill
-            className="object-cover"
-        />
+            sizes='(min-width: 1024px) 50vw, 100vw'
+            className='object-cover'
+          />
         </div>
-
       </div>
     </section>
   )

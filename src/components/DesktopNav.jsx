@@ -1,137 +1,75 @@
 import Link from "next/link";
+import { IoChevronDown } from "react-icons/io5";
+import { MAIN_LINKS, SERVICE_AREA_LINKS, SERVICE_LINKS } from "./navLinks";
+
+const linkClass =
+  "text-sm font-medium text-white/80 transition hover:text-white focus-visible:text-white focus-visible:outline-none";
+
+const Dropdown = ({ label, href, links, wide, footer }) => (
+  <li className="group relative">
+    {href ? (
+      <Link href={href} className={`${linkClass} inline-flex items-center gap-1 py-6`}>
+        {label}
+        <IoChevronDown className="text-xs transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
+      </Link>
+    ) : (
+      <button type="button" className={`${linkClass} inline-flex items-center gap-1 py-6 cursor-default`}>
+        {label}
+        <IoChevronDown className="text-xs transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
+      </button>
+    )}
+
+    <div
+      className={`invisible absolute left-1/2 top-full z-50 -translate-x-1/2 translate-y-1 opacity-0 transition-all duration-200
+        group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
+        group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100
+        ${wide ? 'w-[420px]' : 'w-64'}`}
+    >
+      <div className="rounded-2xl bg-white p-2 text-ink shadow-xl shadow-black/15 ring-1 ring-black/5">
+        <ul className={wide ? 'grid grid-cols-2' : ''}>
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className="block rounded-xl px-4 py-2.5 text-sm transition hover:bg-mist hover:text-brand-dark focus-visible:bg-mist focus-visible:outline-none"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {footer}
+      </div>
+    </div>
+  </li>
+);
 
 const DesktopNav = ({ className }) => {
   return (
-    <nav className={`${className}`}>
-      <ul className="flex pt-2">
-        <li className="pr-4 hover:font-bold">
-          <Link href="/">Home</Link>
+    <nav className={className} aria-label="Main">
+      <ul className="flex items-center gap-7">
+        <li>
+          <Link href="/" className={linkClass}>Home</Link>
         </li>
-
-        <li className="relative pr-4 group">
-          <Link href="/services" className="block hover:font-bold">
-            Services
-          </Link>
-
-          {/* Dropdown */}
-          <div className="absolute left-0 top-full mt-6 w-64 z-50 
-                          bg-[#363434] text-white rounded-xl 
-                          opacity-0 invisible 
-                          group-hover:opacity-100 group-hover:visible 
-                          transition-all duration-200
-                          shadow-lg shadow-black/50">
-            <ul className="py-4">
-              <li>
-                <Link href="/level-1-ceramic-coating" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-                  Level 1 Ceramic Coating
-                </Link>
-              </li>
-              <li>
-                <Link href="/level-2-ceramic-coating" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-                  Level 2 Ceramic Coating
-                </Link>
-              </li>
-              <li>
-                <Link href="/level-3-ceramic-coating" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-                  Level 3 Ceramic Coating
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li className="pr-4 hover:font-bold">
-        <Link href="/our-work">Our Work</Link>
-        </li>
-
-        <li className="pr-4 hover:font-bold">
-        <Link href="/reviews">Reviews</Link>
-        </li>
-
-        <li className="pr-4 hover:font-bold">
-          <Link href="/#contactSection">Contact</Link>
-        </li>
-        <li className="pr-4 hover:font-bold">
-          <Link href="/#ourStorySection">Our Story</Link>
-        </li>
-
-        <li className="relative pr-4 group">
-  <span className="cursor-pointer hover:font-bold">
-    Service Areas
-  </span>
-
-  {/* Dropdown */}
-  <div className="absolute left-0 top-full mt-6 w-64 z-50 
-                  bg-[#363434] text-white rounded-xl 
-                  opacity-0 invisible 
-                  group-hover:opacity-100 group-hover:visible 
-                  transition-all duration-200
-                  shadow-lg shadow-black/50">
-    <ul className="py-4">
-      <li>
-        <Link href="/harleysville" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Harleysville
-        </Link>
-      </li>
-      <li>
-        <Link href="/fort-washington" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Fort Washington
-        </Link>
-      </li>
-      <li>
-        <Link href="/doylestown" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Doylestown
-        </Link>
-      </li>
-      <li>
-        <Link href="/montgomeryville" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Montgomeryville
-        </Link>
-      </li>
-      <li>
-        <Link href="/quakertown" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Quakertown
-        </Link>
-      </li>
-      <li>
-        <Link href="/bryn-mawr" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Bryn Mawr
-        </Link>
-      </li>
-      <li>
-        <Link href="/wayne" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Wayne
-        </Link>
-      </li>
-      <li>
-        <Link href="/valley-forge" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Valley Forge
-        </Link>
-      </li>
-      <li>
-        <Link href="/gladwyne" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Gladwyne
-        </Link>
-      </li>
-      <li>
-        <Link href="/collegeville" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Collegeville
-        </Link>
-      </li>
-      <li>
-        <Link href="/lansdale" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Lansdale
-        </Link>
-      </li>
-      <li>
-        <Link href="/skippack" className="block px-6 py-2 hover:bg-[#2c2b2b]">
-          Skippack
-        </Link>
-      </li>
-    </ul>
-  </div>
-</li>
-
+        <Dropdown
+          label="Services"
+          href="/services"
+          links={SERVICE_LINKS}
+          footer={
+            <Link
+              href="/services"
+              className="mt-1 block border-t border-black/5 px-4 pt-3 pb-2 text-sm font-semibold text-brand hover:text-brand-dark"
+            >
+              Explore all services →
+            </Link>
+          }
+        />
+        {MAIN_LINKS.map((link) => (
+          <li key={link.href}>
+            <Link href={link.href} className={linkClass}>{link.label}</Link>
+          </li>
+        ))}
+        <Dropdown label="Service Areas" links={SERVICE_AREA_LINKS} wide />
       </ul>
     </nav>
   );
