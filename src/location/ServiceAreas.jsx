@@ -1,75 +1,53 @@
-"use client";
-
 import Image from 'next/image'
-import Link from "next/link"
+import Link from 'next/link'
+import { IoLocationOutline } from 'react-icons/io5'
+import { SERVICE_AREA_LINKS } from '@/components/navLinks'
 
-const locations = [
-  { name: "Harleysville", slug: "harleysville" },
-  { name: "Skippack", slug: "skippack" },
-  { name: "Fort Washington", slug: "fort-washington" },
-  { name: "Doylestown", slug: "doylestown" },
-  { name: "Montgomeryville", slug: "montgomeryville" },
-  { name: "Lansdale", slug: "lansdale" },
-  { name: "Collegeville", slug: "collegeville" },
-  { name: "Quakertown", slug: "quakertown" },
-  { name: "Bryn Mawr", slug: "bryn-mawr" },
-  { name: "Wayne", slug: "wayne" },
-  { name: "Valley Forge", slug: "valley-forge" },
-  { name: "Gladwyne", slug: "gladwyne" }
-]
-
-export default function ServiceAreas() {
+/** Links to every service area page; the town being viewed is highlighted. */
+export default function ServiceAreas({ location }) {
   return (
-    <section className="bg-[#FFFFFF] py-20 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-        {/* IMAGE */}
-        <div className="relative w-full h-[200px] md:h-[320px] rounded-xl overflow-hidden">
-        <Image
-            src="/referral/work_example1.JPG"
-            alt="Ceramic coating service areas"
-            fill
-            className="object-cover"
-        />
-        </div>
-
-        {/* TEXT */}
+    <section className='section bg-white'>
+      <div className='container-x grid items-center gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-20'>
         <div>
-
-          <h2 className="text-3xl font-bold mb-4">
-            Our Service Areas
-          </h2>
-
-          <p className="text-black mb-6">
-            Our service locations are equipped with the latest tools,
-            equipment, and techniques to handle any ceramic coating job.
-            Our teams are highly experienced, knowledgeable, and we stand
-            by our work. Contact us today to set up an appointment.
+          <span className='eyebrow'>Service Areas</span>
+          <h2 className='heading mt-3'>Harleysville + 50 mile radius.</h2>
+          <p className='mt-6 text-lg leading-relaxed text-ink/70'>
+            If you are within 50 miles of our Harleysville studio, you’re within our range. We pick up your car and
+            return it ceramic coated, free of charge.
           </p>
-          
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
 
-            {locations.map((city) => (
-              <li key={city.slug}>
-                <Link
-                  href={`/${city.slug}`}
-                  className="
-                    block px-4 py-3 rounded-lg border border-gray-200
-                    text-gray-800 font-medium
-                    hover:border-[#43BDD5] hover:text-[#43BDD5]
-                    hover:shadow-sm hover:-translate-y-[1px]
-                    transition-all duration-200
-                  "
-                >
-                  {city.name}
-                </Link>
-              </li>
-            ))}
-
+          <ul className='mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3'>
+            {SERVICE_AREA_LINKS.map(({ href, label }) => {
+              const current = label === location
+              return (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    aria-current={current ? 'page' : undefined}
+                    className={`flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition ${
+                      current
+                        ? 'bg-ink text-white'
+                        : 'bg-mist text-ink hover:bg-brand/10 hover:text-brand-dark'
+                    }`}
+                  >
+                    <IoLocationOutline aria-hidden className={current ? 'text-brand' : 'text-ink/40'} />
+                    {label}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
-
         </div>
 
+        <div className='relative mx-auto aspect-[325/353] w-full max-w-sm overflow-hidden rounded-3xl ring-1 ring-black/5'>
+          <Image
+            src='/referral/location.png'
+            alt='Map of the 50 mile pickup and delivery radius around Harleysville, PA'
+            fill
+            sizes='(min-width: 1024px) 384px, 90vw'
+            className='object-cover'
+          />
+        </div>
       </div>
     </section>
   )

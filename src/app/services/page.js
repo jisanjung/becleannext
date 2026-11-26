@@ -7,7 +7,7 @@ import FAQ from "@/landing/FAQ";
 import HomeOurWork from "@/landing/HomeOurWork";
 import HomeTestimonials from "@/landing/HomeTestimonials";
 import Advantages from "./Advantages";
-import WhyBeclean from "./WhyBeclean";
+import WhyBeclean from "@/coating/WhyBeclean";
 
 export const metadata = {
   title: "Our Ceramic Coating Services | beclean Ceramic Coating Studio",
