@@ -50,7 +50,7 @@ const Header = () => {
       <div className='container-x flex h-[72px] items-center justify-between gap-6'>
         <Link href='/' className='flex shrink-0 items-center gap-2' aria-label='beclean home'>
           <Image
-            src='/beclean_logo_wreath.png'
+            src='/logo_wreath.png'
             alt=''
             width={40}
             height={40}
